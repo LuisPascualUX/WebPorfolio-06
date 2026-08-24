@@ -12,9 +12,24 @@
     const MAX_ALPHA = 0.73;
     const BASE_SIZE = 3.2;
     const MAX_SIZE = 4.8;
+    const FADE_DELAY = 200;
+    const FADE_DURATION = 280;
 
-    const FADE_DELAY = 600;  // ms before fading out
-    const FADE_DURATION = 400; // ms to fully fade out
+    function readNumber(value, fallback) {
+        const n = parseFloat(value);
+        return Number.isFinite(n) ? n : fallback;
+    }
+
+    function getDotTokens() {
+        const style = getComputedStyle(document.documentElement);
+        return {
+            dotColor: style.getPropertyValue('--dot').trim(),
+            baseAlpha: readNumber(style.getPropertyValue('--dot-base'), BASE_ALPHA),
+            maxAlpha: readNumber(style.getPropertyValue('--dot-max'), MAX_ALPHA),
+            fadeDelay: readNumber(style.getPropertyValue('--dot-fade-delay'), FADE_DELAY),
+            fadeDuration: readNumber(style.getPropertyValue('--dot-fade-duration'), FADE_DURATION),
+        };
+    }
 
     let mouse = { x: -9999, y: -9999 };
     let raf = null;
@@ -34,10 +49,11 @@
     function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        // Calculate global fade multiplier
+        const { dotColor, baseAlpha, maxAlpha, fadeDuration } = getDotTokens();
+
         let fade = 1;
         if (fading) {
-            fade = Math.max(0, 1 - (Date.now() - fadeStart) / FADE_DURATION);
+            fade = Math.max(0, 1 - (Date.now() - fadeStart) / fadeDuration);
             if (fade <= 0) {
                 fading = false;
                 visible = false;
@@ -50,19 +66,18 @@
 
         const cols = Math.ceil(window.innerWidth / GAP) + 1;
         const rows = Math.ceil(window.innerHeight / GAP) + 1;
-        const style     = getComputedStyle(document.documentElement);
-        const dotColor  = style.getPropertyValue('--dot').trim();
-        const baseAlpha = parseFloat(style.getPropertyValue('--dot-base')) || BASE_ALPHA;
 
         for (let r = 0; r < rows; r++) {
             for (let c = 0; c < cols; c++) {
                 const x = c * GAP;
                 const y = r * GAP;
                 const dist = Math.hypot(x - mouse.x, y - mouse.y);
-                const t = Math.max(0, 1 - dist / RADIUS);
+                if (dist >= RADIUS) continue;
+                const t = 1 - dist / RADIUS;
                 const ease = t * t * (3 - 2 * t); // smoothstep
 
-                const alpha = (baseAlpha + (MAX_ALPHA - baseAlpha) * ease) * fade;
+                const alpha = (baseAlpha + (maxAlpha - baseAlpha) * ease) * fade;
+                if (alpha < 0.02) continue;
                 const size = BASE_SIZE + (MAX_SIZE - BASE_SIZE) * ease;
 
                 ctx.strokeStyle = `rgba(${dotColor}, ${alpha})`;
@@ -88,7 +103,7 @@
         if (idleTimer) clearTimeout(idleTimer);
         fading = false;
         visible = true;
-        idleTimer = setTimeout(startFade, FADE_DELAY);
+        idleTimer = setTimeout(startFade, getDotTokens().fadeDelay);
     }
 
     document.addEventListener('mousemove', (e) => {
@@ -100,8 +115,6 @@
     });
 
     document.addEventListener('mouseleave', () => {
-        mouse.x = -9999;
-        mouse.y = -9999;
         if (idleTimer) clearTimeout(idleTimer);
         startFade();
     });

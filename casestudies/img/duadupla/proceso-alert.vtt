@@ -1,0 +1,140 @@
+WEBVTT
+
+1
+00:00:01.152 --> 00:00:05.188
+Partimos de un documento de Figma
+donde están los componentes,
+
+2
+00:00:05.188 --> 00:00:09.158
+como veis no está creado el
+componente Alert, vamos a Cursor,
+
+3
+00:00:09.158 --> 00:00:12.152
+decimos que vamos a crear
+el componen de Alert
+
+4
+00:00:20.160 --> 00:00:23.997
+Voy a acelerar esta parte del
+proceso mientras se genera el
+
+5
+00:00:23.997 --> 00:00:28.160
+componente y su documentación en
+Figma para no alargar la espera.
+
+6
+00:00:32.544 --> 00:00:34.957
+Veis que voy saltando entre
+Cursor y Figma para ir
+
+7
+00:00:34.957 --> 00:00:37.584
+comprobando si se está
+creando el componente o no
+
+8
+00:00:54.144 --> 00:00:58.144
+Cursor va revisando variables,
+variantes del componente.
+
+9
+00:01:01.920 --> 00:01:03.920
+va creando ya la primera versión.
+
+10
+00:01:14.496 --> 00:01:17.296
+Ya vemos las variantes que
+se han creado en diseño,
+
+11
+00:01:30.528 --> 00:01:32.528
+ya vemos que se ha creado el componente
+
+12
+00:01:34.272 --> 00:01:38.892
+Vamos a revisar el componente Figma que
+estén todos los iconos, los estilos
+
+13
+00:01:38.892 --> 00:01:43.272
+tipográficos aplicados, hago algunas
+modificaciones sobre alguno de ellos
+
+14
+00:01:49.152 --> 00:01:53.472
+y digo a Cursor que aplique estas
+modificaciones a la documentación.
+
+15
+00:02:15.456 --> 00:02:21.336
+Vamos ahora con el paso 2, que es pasar
+toda esta documentación Storybook en local
+
+16
+00:02:31.008 --> 00:02:35.240
+He pedido también que cuando tenga toda la
+documentación lo cargue en un localhost
+
+17
+00:02:35.240 --> 00:02:39.008
+para que pueda hacer la validación y
+la comprobación de que todo está ok.
+
+18
+00:02:54.720 --> 00:02:59.280
+Revisando el localhost, veo que hay
+algunos desajustes en la maquetación
+
+19
+00:03:03.264 --> 00:03:06.064
+Voy a decir a Cursor que lo arregle
+
+20
+00:03:09.504 --> 00:03:12.403
+y que lo implemente
+como una norma más para
+
+21
+00:03:12.403 --> 00:03:15.504
+cuando vuelva a surgir
+que lo arregle también.
+
+22
+00:03:26.112 --> 00:03:30.725
+Parece que ya la ha arreglado,
+vamos al siguiente paso ahora,
+
+23
+00:03:30.725 --> 00:03:35.112
+que es subir todo esto a GitHub
+y hacer el redeploy en Vercel,
+
+24
+00:03:35.112 --> 00:03:37.112
+para que esté publicado...
+
+25
+00:03:38.880 --> 00:03:40.880
+en el Storybook
+
+26
+00:03:41.856 --> 00:03:45.819
+de la web. Lo vemos, y ya
+está subido a Vercel con las
+
+27
+00:03:45.819 --> 00:03:49.856
+modificaciones. Vamos a
+comprobar el código en Codepen
+
+28
+00:03:51.840 --> 00:03:55.792
+copiamos el HTML y el
+CSS y nos da el Alert que
+
+29
+00:03:55.792 --> 00:03:59.240
+teníamos diseñado en Figma y eso es todo.

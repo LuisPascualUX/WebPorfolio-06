@@ -26,52 +26,64 @@
    ======================================== */
 :root {
     color-scheme: light;
-    --bg:             #FAF9F5;
-    --text:           #141413;
-    --text-secondary: #3a3a3a;
-    --text-muted:     #6b6b6b;
-    --text-em:        #171717;
-    --border:         #e8e8e8;
-    --link-line:      #b0b0b0;
-    --phase-bg:       rgba(0, 0, 0, 0.03);
-    --quote-border:   #d0d0d0;
-    --bullet:         #c0c0c0;
-    --dot:            225, 209, 199;
-    --dot-base:       0.18;
+    --bg:             #F5F8FA;
+    --text:           #5F6A84;
+    --text-secondary: #5F6A84;
+    --text-muted:     #5F6A84;
+    --text-em:        #0D2C75;
+    --heading:        #0D2C75;
+    --border:         #D0E3F5;
+    --link-line:      #5F6A84;
+    --phase-bg:       #E1ECF7;
+    --quote-border:   #D0E3F5;
+    --bullet:         #5F6A84;
+    --dot:            188, 214, 235;
+    --dot-base:       0.32;
+    --dot-max:        0.82;
+    --dot-fade-delay: 200;
+    --dot-fade-duration: 280;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
         color-scheme: dark;
-        --bg:             #111110;
-        --text:           #ECEAE3;
-        --text-secondary: #B5B2AA;
-        --text-muted:     #6E6B64;
-        --text-em:        #F0EDE6;
-        --border:         #252420;
-        --link-line:      #454340;
-        --phase-bg:       rgba(255, 255, 255, 0.04);
-        --quote-border:   #3a3632;
-        --bullet:         #454340;
-        --dot:            96, 90, 78;
-        --dot-base:       0.04;
+        --bg:             #091020;
+        --text:           #7B86A0;
+        --text-secondary: #7B86A0;
+        --text-muted:     #7B86A0;
+        --text-em:        #E1ECF7;
+        --heading:        #E1ECF7;
+        --border:         #26314A;
+        --link-line:      #7B86A0;
+        --phase-bg:       #131C2F;
+        --quote-border:   #26314A;
+        --bullet:         #7B86A0;
+        --dot:            74, 95, 124;
+        --dot-base:       0;
+        --dot-max:        0.68;
+        --dot-fade-delay: 80;
+        --dot-fade-duration: 200;
     }
 }
 
 :root[data-theme="dark"] {
     color-scheme: dark;
-    --bg:             #111110;
-    --text:           #ECEAE3;
-    --text-secondary: #B5B2AA;
-    --text-muted:     #6E6B64;
-    --text-em:        #F0EDE6;
-    --border:         #252420;
-    --link-line:      #454340;
-    --phase-bg:       rgba(255, 255, 255, 0.04);
-    --quote-border:   #3a3632;
-    --bullet:         #454340;
-    --dot:            96, 90, 78;
-    --dot-base:       0.04;
+    --bg:             #091020;
+    --text:           #7B86A0;
+    --text-secondary: #7B86A0;
+    --text-muted:     #7B86A0;
+    --text-em:        #E1ECF7;
+    --heading:        #E1ECF7;
+    --border:         #26314A;
+    --link-line:      #7B86A0;
+    --phase-bg:       #131C2F;
+    --quote-border:   #26314A;
+    --bullet:         #7B86A0;
+    --dot:            74, 95, 124;
+    --dot-base:       0;
+    --dot-max:        0.68;
+    --dot-fade-delay: 80;
+    --dot-fade-duration: 200;
 }
 
 /* Reset */
@@ -138,7 +150,7 @@ body {
     top: -100%;
     left: 16px;
     padding: 8px 16px;
-    background-color: var(--text);
+    background-color: var(--heading);
     color: var(--bg);
     text-decoration: none;
     font-size: 0.866rem;
@@ -179,7 +191,7 @@ body {
 }
 
 .theme-toggle:focus-visible {
-    outline: 2px solid var(--text);
+    outline: 2px solid var(--heading);
     outline-offset: 2px;
     border-radius: 6px;
 }
@@ -223,6 +235,7 @@ h1 {
     letter-spacing: -0.03em;
     line-height: 1.3;
     margin-bottom: 24px;
+    color: var(--heading);
 }
 
 h2 {
@@ -231,6 +244,7 @@ h2 {
     letter-spacing: 0;
     margin-bottom: 12px;
     margin-top: 48px;
+    color: var(--heading);
 }
 
 h2:first-child {
@@ -242,6 +256,7 @@ h3 {
     font-weight: 500;
     margin-top: 24px;
     margin-bottom: 8px;
+    color: var(--heading);
 }
 
 p {
@@ -269,7 +284,7 @@ a:hover {
 
 /* Focus visible */
 :focus-visible {
-    outline: 2px solid var(--text);
+    outline: 2px solid var(--heading);
     outline-offset: 2px;
     border-radius: 2px;
 }
@@ -332,6 +347,7 @@ img {
     font-weight: 500;
     margin-bottom: 12px;
     margin-top: 0;
+    color: var(--heading);
 }
 
 .phase-tools {

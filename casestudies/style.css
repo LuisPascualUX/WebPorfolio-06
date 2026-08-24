@@ -1,0 +1,542 @@
+/* ========================================
+   Luis Pascual — Case Studies
+   Matches index.html aesthetic
+   ======================================== */
+
+/* Font: Geist (local) */
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist[wght].woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font: Geist Pixel Triangle */
+@font-face {
+    font-family: 'GeistPixel';
+    src: url('../fonts/GeistPixel-Triangle.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================================
+   Tokens de color (light / dark)
+   ======================================== */
+:root {
+    color-scheme: light;
+    --bg:             #F5F8FA;
+    --text:           #5F6A84;
+    --text-secondary: #5F6A84;
+    --text-muted:     #5F6A84;
+    --text-em:        #0D2C75;
+    --heading:        #0D2C75;
+    --border:         #D0E3F5;
+    --link-line:      #5F6A84;
+    --phase-bg:       #E1ECF7;
+    --quote-border:   #D0E3F5;
+    --bullet:         #5F6A84;
+    --dot:            188, 214, 235;
+    --dot-base:       0.32;
+    --dot-max:        0.82;
+    --dot-fade-delay: 200;
+    --dot-fade-duration: 280;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg:             #091020;
+        --text:           #7B86A0;
+        --text-secondary: #7B86A0;
+        --text-muted:     #7B86A0;
+        --text-em:        #E1ECF7;
+        --heading:        #E1ECF7;
+        --border:         #26314A;
+        --link-line:      #7B86A0;
+        --phase-bg:       #131C2F;
+        --quote-border:   #26314A;
+        --bullet:         #7B86A0;
+        --dot:            74, 95, 124;
+        --dot-base:       0;
+        --dot-max:        0.68;
+        --dot-fade-delay: 80;
+        --dot-fade-duration: 200;
+    }
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg:             #091020;
+    --text:           #7B86A0;
+    --text-secondary: #7B86A0;
+    --text-muted:     #7B86A0;
+    --text-em:        #E1ECF7;
+    --heading:        #E1ECF7;
+    --border:         #26314A;
+    --link-line:      #7B86A0;
+    --phase-bg:       #131C2F;
+    --quote-border:   #26314A;
+    --bullet:         #7B86A0;
+    --dot:            74, 95, 124;
+    --dot-base:       0;
+    --dot-max:        0.68;
+    --dot-fade-delay: 80;
+    --dot-fade-duration: 200;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* ========================================
+   Custom cursor (solo en dispositivos con ratón)
+   ======================================== */
+@media (pointer: fine) {
+    html, * { cursor: none !important; }
+
+    .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--text-secondary);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.25s ease, background 0.15s ease, border-color 0.15s ease;
+        will-change: transform;
+    }
+
+    .cursor--visible { opacity: 1; }
+    .cursor--hover   { background: var(--text-secondary); border-color: transparent; }
+}
+
+body {
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--text);
+    background-color: var(--bg);
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#dot-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    padding: 8px 16px;
+    background-color: var(--heading);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 0.866rem;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 16px;
+    opacity: 1;
+}
+
+/* ========================================
+   Theme toggle
+   ======================================== */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    cursor: pointer;
+    color: var(--text-secondary);
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    z-index: 10;
+}
+
+.theme-toggle:hover {
+    color: var(--text);
+    border-color: var(--text-muted);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--heading);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+.theme-toggle .icon-sun  { display: none; }
+.theme-toggle .icon-moon { display: flex; }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+    :root:not([data-theme="light"]) .theme-toggle .icon-sun  { display: flex; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun  { display: flex; }
+
+/* Layout */
+main {
+    position: relative;
+    z-index: 1;
+    width: min(680px, 100% - 48px);
+    margin: 0 auto;
+    padding: 80px 0 48px;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typography */
+h1 {
+    font-family: 'GeistPixel', 'Geist', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    color: var(--heading);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+    margin-top: 48px;
+    color: var(--heading);
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--heading);
+}
+
+p {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--link-line);
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+/* Focus visible */
+:focus-visible {
+    outline: 2px solid var(--heading);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 48px 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* ========================================
+   Back link
+   ======================================== */
+.back-link {
+    display: inline-block;
+    font-size: 0.866rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+
+.back-link:hover {
+    color: var(--text);
+    opacity: 1;
+}
+
+/* ========================================
+   Case study hero
+   ======================================== */
+.detail-hero img {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* ========================================
+   Phase info boxes
+   ======================================== */
+.phaseorange,
+.phaseinvestigador,
+.phase {
+    background-color: var(--phase-bg);
+    padding: 24px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: small;
+    line-height: normal;
+}
+
+.phase-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 0;
+    color: var(--heading);
+}
+
+.phase-tools {
+    margin-top: 4px;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.phase p .phase-tools,
+.phaseorange p .phase-tools,
+.phaseinvestigador p .phase-tools {
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.phase p,
+.phaseorange p,
+.phaseinvestigador p {
+    margin-bottom: 8px;
+}
+
+.phase p:last-child,
+.phaseorange p:last-child,
+.phaseinvestigador p:last-child {
+    margin-bottom: 0;
+}
+
+.step-card {
+    background-color: var(--phase-bg);
+    padding: 20px 24px;
+    border-radius: 6px;
+    margin: 16px 0;
+}
+
+.step-card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.case-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin: 16px 0 8px;
+    background: #111110;
+}
+
+.project-links {
+    margin-top: 16px;
+}
+
+.project-links a + a {
+    margin-left: 1.1em;
+}
+
+/* ========================================
+   Content sections
+   ======================================== */
+.detail-section {
+    margin-bottom: 0;
+}
+
+.highlight-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--text-secondary);
+    border-left: 2px solid var(--quote-border);
+    padding: 12px 20px;
+    margin: 20px 0;
+    font-size: 0.933rem;
+    line-height: 1.6;
+}
+
+/* ========================================
+   Process lists
+   ======================================== */
+.process-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.process-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+    font-size: 0.933rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.process-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    background-color: var(--bullet);
+    border-radius: 50%;
+}
+
+/* ========================================
+   Gallery
+   ======================================== */
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gallery-grid img {
+    border: 1px solid var(--border);
+}
+
+.gallery-grid .phase-tools {
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* ========================================
+   Results
+   ======================================== */
+.results .phase-tools {
+    color: var(--text);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+    margin-top: 0;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+}
+
+.social a {
+    font-size: 0.933rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 24px;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 56px 0 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    main {
+        padding: 48px 0 40px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    hr {
+        margin: 36px 0;
+    }
+}
