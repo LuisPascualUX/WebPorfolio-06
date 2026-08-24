@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3FK4FCKMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3FK4FCKMQ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange Empresas — Case study de Luis Pascual, Sr Product Designer">
+    <title>Design Tokens — Luis Pascual</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Anti-FOUC: aplica el tema antes de renderizar -->
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"/>
+            <line x1="12" y1="2"     x2="12" y2="4"/>
+            <line x1="12" y1="20"    x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="2"  y1="12"    x2="4"  y2="12"/>
+            <line x1="20" y1="12"    x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <canvas id="dot-grid" aria-hidden="true"></canvas>
+    <main id="main-content">
+        <a href="../index.html" class="back-link">← Volver</a>
+
+        <section class="detail-hero">
+            <h1>Design-tokens</h1>
+            <img src="hola.png" alt="Mensaje de bienvenida de la skill Design-tokens" class="detail-hero-image">
+        </section>
+
+        <section class="detail-section">
+            <h2>El problema</h2>
+            <p> Crear tokens de diseño coherentes es lento y propenso a errores. Pasar de un color de marca a un JSON válido con escalas perceptualmente uniformes, valores de accesibilidad WCAG/APCA y formatos HSL/OKLCH puede llevar horas. Y hacerlo bien —siguiendo la especificación del W3C Design Tokens Community Group— es territorio de especialista.</p>
+            </section>
+        <hr>
+        <section class="detail-section">
+            <h2>La solución</h2>
+            <p>Un skill para Claude Code que actúa como generador interactivo de tokens W3C. Con tres datos (color de marca, gris base y tipografía) genera un sistema completo: paletas de color con escala OKLCH canónica, tipografía modular, espaciado, elevaciones, grid, motion, focus accesible y el nuevo material Liquid Glass de iOS 26.</p>
+
+            <p>Dos modos:</p>
+            <ul class="process-list">
+                <li>Rápido (3 inputs → archivo completo).</li>
+                <li>Guiado (12 pasos para control total).</li>
+            </ul>
+
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>El proceso de creación</h2>
+            <p>El skill se define en un único archivo Markdown en .claude/commands/design-tokens.md. El reto principal fue la especificación del comportamiento: cómo calcular rampas de color perceptualmente uniformes, cómo estructurar el JSON según el spec W3C, qué preguntar y en qué orden, y cómo generar el showcase HTML sin dependencias externas.</p>
+            <p>Varias iteraciones para afinar: la escala OKLCH canónica, el sistema de referencias entre tokens ({spacing.gap.4}), la estructura de los tokens compuestos de tipografía, y las extensiones de accesibilidad por cada color literal.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section">
+            <h2>El proceso de ejecución</h2>
+            <p>Cuando se invoca "/design-tokens", Claude sigue el flujo del skill:</p>
+
+            <ol class="process-list-number">
+                <li>Pregunta el modo (rápido o guiado).</li>
+                <li>Recoge los inputs necesarios.</li>
+                <li>Ejecuta un script Python internamente para hacer los cálculos de color (OKLCH → sRGB, WCAG, APCA) con precisión matemática.</li>
+                <li>Escribe "{nombre}.tokens.json" y "{nombre}.showcase.html".</li>
+                <li>Abre el showcase en el navegador con "open".</li>
+            </ol>
+            <p>El showcase es HTML autocontenido que lee el JSON vía "fetch" y renderiza los tokens en vivo.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section results">
+            <h2>Resultados</h2>
+            <ul class="process-list">
+                <li><strong>339 tokens</strong> generados a partir de 4 inputs en modo rápido.</li>
+                <li>Paletas de color con escala OKLCH canónica garantizando contraste consistente entre hues.</li>
+                <li>Badges WCAG AA/AAA y valores APCA por cada color.</li>
+                <li>Showcase navegable con 11 secciones: colores, tipografía, espaciado, elevaciones, grid, motion, Liquid Glass…</li>
+                <li>Fichero JSON listo para importar en Figma, Style Dictionary o Theo.</li>
+            </ul>
+        </section>
+         <hr>
+        <section class="detail-section">
+            <h2>Aprendizaje y Conclusión</h2>
+            <p>Los skills de Claude Code son sorprendentemente potentes cuando la instrucción está bien especificada. El archivo Markdown es el producto: define el comportamiento, los cálculos, el formato de salida y el tono de la conversación.</p>
+            <p>El mayor aprendizaje: <strong>precisión en el prompt del skill importa más que en cualquier prompt conversacional</strong> . Cada ambigüedad se convierte en un token mal generado o en una pregunta innecesaria al usuario. Invertir tiempo en la especificación ahorra tiempo en cada ejecución posterior.</p>
+        </section>
+         <hr>
+                 
+         <section class="detail-section">
+            <h2>Showcase</h2>
+            <p>Para un input en modo rápido de:</p>
+            <ul class="process-list">
+                <li>Nombre:<strong> Luis DS</strong></li>
+                <li>Color primario:<strong> #870E46</strong></li>
+                <li>Color de acento:<strong> #41F6AB</strong></li>
+                <li>Color neutral:<strong> #869095</strong></li>
+                <li>Tipografía:<strong>Afacad (Google Fonts)</strong></li>
+            </ul>
+          <br>
+            <p>Se obtuvo el siguiente resultado:</p>
+               <ul class="process-list">
+                <li>Color:<strong> 100 </strong>tokens</li>
+                <li>Tipografía:<strong> 38 </strong>tokens</li>
+                <li>Espaciado:<strong> 70 </strong>tokens</li>
+                <li>Aspect ratio:<strong> 6 </strong>tokens</li>
+                <li>Elevaciones (sombras):<strong> 7 </strong>tokens</li>
+                <li>Bordes (width & radius):<strong> 12 </strong>tokens</li>
+                <li>Grid and breackpoints:<strong> 30 </strong>tokens</li>
+                <li>Focus:<strong> 6 </strong>tokens</li>
+                <li>Motion:<strong> 16 </strong>tokens</li>
+                <li>Shader:<strong> 54 </strong>tokens</li>
+                <li><strong>TOTAL: 339 tokens </strong></li>
+            </ul>
+           <br>
+            <p>Se supone:</p>
+            <ul class="process-list">
+                <li>Secondary #008AA7 derivada automáticamente (primary hue +210° → teal)</li>
+                <li>Acento #41F6AB usado tal cual (user-provided)</li>
+                <li>Spacing base: 4px, escala estilo Tailwind (35 pasos)</li>
+                <li>Border radius base: 8px (sm=4px, lg=12px, xl=16px…)</li>
+                <li>Shadow base: #101828</li>
+                <li>Motion: estilo sutil (duraciones ligeramente más largas)</li>
+                <li>Semantic colors: defaults (más usados))</li>
+                <li>Focus: WCAG 2.2 §2.4.11 (ring 2px, offset 2px)</li>
+                <li>Liquid Glass: 3 variantes (default/thick/ultra-thin), iOS 26</li>
+            </ul>
+              <br>
+            <p><a href="../luisds/luis-ds.showcase.html" target="_blank" rel="noopener noreferrer">Ver el showcase ↗</a></p>
+
+
+
+
+
+
+        </section>
+
+         <hr>
+
+        <footer>
+            <p class="copyright">
+                <span>© 2026 Luis Pascual</span>
+                <span>Madrid (España)</span>
+            </p>
+        </footer>
+    </main>
+    <script src="../js/dot-grid.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+</html>

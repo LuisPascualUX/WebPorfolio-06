@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3FK4FCKMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3FK4FCKMQ');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auditoría de Color, Tipografía y Spacing — pluxee.es</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ Hero ═══ -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Design Audit Report</div>
+      <h1>Auditoría de <span>Color, Tipografía &amp; Spacing</span></h1>
+      <h1 style="font-size:clamp(1.2rem,3vw,2rem); font-weight:400; opacity:0.8;">pluxee.es</h1>
+      <p class="hero-meta">10 de febrero de 2026 &middot; Página Home &middot; <a href="https://www.pluxee.es" target="_blank">pluxee.es</a></p>
+    </div>
+  </header>
+
+  <!-- ═══ Sticky Nav ═══ -->
+  <nav class="sticky-nav">
+    <div class="sticky-nav-inner">
+      <a href="#brand">Paleta Brand</a>
+      <a href="#ui">Colores UI</a>
+      <a href="#buttons">Botones</a>
+      <a href="#gradients">Gradientes</a>
+      <a href="#shadows">Sombras</a>
+      <a href="#contrast">Contraste WCAG</a>
+      <a href="#tokens">Design Tokens</a>
+      <a href="#typography">Tipografía</a>
+      <a href="#spacing">Spacing</a>
+      <a href="#recommendations">Recomendaciones</a>
+    </div>
+  </nav>
+
+  <!-- ═══ 1. Brand Palette ═══ -->
+  <section id="brand">
+    <div class="container">
+      <span class="section-label">01</span>
+      <h2 class="section-title">Paleta de Marca</h2>
+      <p class="section-desc">Los colores principales que componen la identidad visual de Pluxee en su sitio web.</p>
+
+      <h3 class="swatch-group-title">Colores Primarios</h3>
+      <div class="swatch-grid">
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#221c46"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#221c46</div>
+            <div class="swatch-name">Deep Blue &middot; Primary Brand</div>
+            <div class="swatch-token">--plx-semantic-color-brand-primary</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#00eb5e"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#00eb5e</div>
+            <div class="swatch-name">Ultra Green &middot; CTA Primary</div>
+            <div class="swatch-token">--plx-semantic-color-cta-primary</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color bordered" style="background:#ffffff"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#ffffff</div>
+            <div class="swatch-name">White &middot; Fondos &amp; Texto inverso</div>
+            <div class="swatch-token">--color-white</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title">Colores Secundarios</h3>
+      <div class="swatch-grid">
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#17ccf9"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#17ccf9</div>
+            <div class="swatch-name">Boldy Blue</div>
+            <div class="swatch-token">--color-brand-tertiary</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#ffdc37"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#ffdc37</div>
+            <div class="swatch-name">Very Yellow</div>
+            <div class="swatch-token">--color-brand-quaternary</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#ff7375"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#ff7375</div>
+            <div class="swatch-name">Confidently Coral</div>
+            <div class="swatch-token">--color-brand-quinary</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title">Escalas de Tintes</h3>
+
+      <!-- Ultra Green Scale -->
+      <div class="tint-row">
+        <div class="tint-cell" style="background:#c7fcca; color:#221c46"><span>#c7fcca</span><small>Dimmed</small></div>
+        <div class="tint-cell" style="background:#85fd96; color:#221c46"><span>#85fd96</span><small>Light</small></div>
+        <div class="tint-cell" style="background:#00eb5e; color:#221c46"><span>#00eb5e</span><small>Base</small></div>
+        <div class="tint-cell" style="background:#00330e; color:#ffffff"><span>#00330e</span><small>Pressed</small></div>
+      </div>
+
+      <!-- Boldy Blue Scale -->
+      <div class="tint-row">
+        <div class="tint-cell" style="background:#def3fb; color:#221c46"><span>#def3fb</span><small>Dimmed</small></div>
+        <div class="tint-cell" style="background:#88ddfb; color:#221c46"><span>#88ddfb</span><small>Light</small></div>
+        <div class="tint-cell" style="background:#17ccf9; color:#221c46"><span>#17ccf9</span><small>Base</small></div>
+        <div class="tint-cell" style="background:#26a3dd; color:#ffffff"><span>#26a3dd</span><small>Dark</small></div>
+      </div>
+
+      <!-- Very Yellow Scale -->
+      <div class="tint-row">
+        <div class="tint-cell" style="background:#fdf3d6; color:#221c46"><span>#fdf3d6</span><small>Dimmed</small></div>
+        <div class="tint-cell" style="background:#fdeec1; color:#221c46"><span>#fdeec1</span><small>Light</small></div>
+        <div class="tint-cell" style="background:#ffdc37; color:#221c46"><span>#ffdc37</span><small>Base</small></div>
+      </div>
+
+      <!-- Coral Scale -->
+      <div class="tint-row">
+        <div class="tint-cell" style="background:#fbddda; color:#221c46"><span>#fbddda</span><small>Dimmed</small></div>
+        <div class="tint-cell" style="background:#fcc1be; color:#221c46"><span>#fcc1be</span><small>Light</small></div>
+        <div class="tint-cell" style="background:#ff7375; color:#ffffff"><span>#ff7375</span><small>Base</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 2. UI Colors ═══ -->
+  <section id="ui" style="background: var(--white)">
+    <div class="container">
+      <span class="section-label">02</span>
+      <h2 class="section-title">Colores Funcionales / UI</h2>
+      <p class="section-desc">Colores aplicados a texto, enlaces, fondos y bordes en la interfaz.</p>
+
+      <h3 class="swatch-group-title">Texto</h3>
+      <div class="text-sample-grid">
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#221c46"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#221c46">Texto Primario</div>
+            <div class="text-sample-meta">#221c46 &middot; 1161 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:100%;background:#221c46"></div></div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#463f5f"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#463f5f">Texto Secundario</div>
+            <div class="text-sample-meta">#463f5f &middot; 7 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:2%;background:#463f5f"></div></div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#5a5469"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#5a5469">Texto Terciario</div>
+            <div class="text-sample-meta">#5a5469 &middot; 7 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:2%;background:#5a5469"></div></div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#000000"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#000000">Negro Puro (legacy)</div>
+            <div class="text-sample-meta">#000000 &middot; 216 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:18%;background:#000000"></div></div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot bordered" style="background:#ffffff"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label">Texto Inverso</div>
+            <div class="text-sample-meta">#ffffff &middot; 98 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:8%;background:#aaa"></div></div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#555555"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#555555">Gris Oscuro</div>
+            <div class="text-sample-meta">#555555 &middot; 15 usos</div>
+            <div class="text-sample-bar"><div class="text-sample-bar-fill" style="width:1.3%;background:#555555"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title">Enlaces</h3>
+      <div class="text-sample-grid">
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#1b51dc"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#1b51dc">Link Primary</div>
+            <div class="text-sample-meta">#1b51dc &middot; Interactive / Focus</div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#26a3dd"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#26a3dd">Link Brand</div>
+            <div class="text-sample-meta">#26a3dd &middot; Header search</div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#cc1480"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#cc1480">Accent Magenta</div>
+            <div class="text-sample-meta">#cc1480 &middot; Blog categories</div>
+          </div>
+        </div>
+        <div class="text-sample">
+          <div class="text-sample-dot" style="background:#3860be"></div>
+          <div class="text-sample-content">
+            <div class="text-sample-label" style="color:#3860be">Link Secondary</div>
+            <div class="text-sample-meta">#3860be &middot; Alternative links</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title">Fondos</h3>
+      <div class="swatch-grid">
+        <div class="swatch-card">
+          <div class="swatch-color bordered" style="background:#ffffff"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#ffffff</div>
+            <div class="swatch-name">Fondo Principal &middot; 46 usos</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#faf8ff"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#faf8ff</div>
+            <div class="swatch-name">Fondo Primario</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#f3f3fc"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#f3f3fc</div>
+            <div class="swatch-name">Fondo Info</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#f8f8f8"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#f8f8f8</div>
+            <div class="swatch-name">Fondo Neutro</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#221c46"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#221c46</div>
+            <div class="swatch-name">Fondo Oscuro &middot; 9 usos</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#362f54"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#362f54</div>
+            <div class="swatch-name">Fondo Menú</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#dafcdb"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#dafcdb</div>
+            <div class="swatch-name">Fondo Verde Claro</div>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="swatch-color" style="background:#aefcc9"></div>
+          <div class="swatch-info">
+            <div class="swatch-hex">#aefcc9</div>
+            <div class="swatch-name">Fondo Verde Medio</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 3. Buttons ═══ -->
+  <section id="buttons">
+    <div class="container">
+      <span class="section-label">03</span>
+      <h2 class="section-title">Estilos de Botones</h2>
+      <p class="section-desc">Variantes de botones detectadas en la interfaz, con el distintivo corner-cut de Pluxee.</p>
+
+      <div class="buttons-grid">
+        <div class="button-showcase">
+          <div class="button-showcase-label">CTA Principal</div>
+          <div class="btn-demo corner-cut" style="background:#00eb5e; color:#221c46; box-shadow: 2px 2px 0 0 rgba(34,28,70,0.2)">Solicita información</div>
+          <div class="button-showcase-info">bg: #00eb5e<br>text: #221c46<br>shadow: deep-blue 20%</div>
+        </div>
+        <div class="button-showcase">
+          <div class="button-showcase-label">CTA Hover</div>
+          <div class="btn-demo corner-cut" style="background:#c7fcca; color:#221c46">Solicita información</div>
+          <div class="button-showcase-info">bg: #c7fcca<br>text: #221c46</div>
+        </div>
+        <div class="button-showcase">
+          <div class="button-showcase-label">CTA Pressed</div>
+          <div class="btn-demo corner-cut" style="background:#00330e; color:#ffffff">Solicita información</div>
+          <div class="button-showcase-info">bg: #00330e<br>text: #ffffff</div>
+        </div>
+        <div class="button-showcase">
+          <div class="button-showcase-label">Secundario (Outline)</div>
+          <div class="btn-demo" style="background:transparent; color:#221c46; border-color:#221c46">Contacto</div>
+          <div class="button-showcase-info">bg: transparent<br>text: #221c46<br>border: #221c46</div>
+        </div>
+        <div class="button-showcase">
+          <div class="button-showcase-label">Cookie Accept</div>
+          <div class="btn-demo corner-cut" style="background:#00eb5e; color:#221c46">Aceptar cookies</div>
+          <div class="button-showcase-info">bg: #00eb5e<br>text: #221c46</div>
+        </div>
+        <div class="button-showcase">
+          <div class="button-showcase-label">Filter / Apply</div>
+          <div class="btn-demo" style="background:#346e4a; color:#ffffff; border-color:#346e4a; border-radius:2px">Apply</div>
+          <div class="button-showcase-info">bg: #346e4a<br>text: #ffffff</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 4. Gradients / Corner Cuts ═══ -->
+  <section id="gradients" style="background:var(--white)">
+    <div class="container">
+      <span class="section-label">04</span>
+      <h2 class="section-title">Gradientes &amp; Corner-Cuts</h2>
+      <p class="section-desc">Elemento de identidad visual: esquinas cortadas a 315&deg; aplicadas a botones, cards y secciones.</p>
+
+      <div class="corner-cuts-grid">
+        <div class="corner-cut-demo" style="background:#00eb5e"><span style="color:#221c46">#00eb5e</span></div>
+        <div class="corner-cut-demo" style="background:#17ccf9"><span style="color:#221c46">#17ccf9</span></div>
+        <div class="corner-cut-demo" style="background:#ff7375"><span style="color:#ffffff">#ff7375</span></div>
+        <div class="corner-cut-demo" style="background:#ffdc37"><span style="color:#221c46">#ffdc37</span></div>
+        <div class="corner-cut-demo" style="background:#ffffff; border:1px solid rgba(34,28,70,0.1)"><span style="color:#221c46">#ffffff</span></div>
+        <div class="corner-cut-demo" style="background:#221c46"><span style="color:#00eb5e">#221c46</span></div>
+      </div>
+
+      <p style="font-size:0.85rem; color:var(--text-tertiary); margin-top:1rem;">Implementados mediante <code style="background:var(--bg-info);padding:0.15rem 0.4rem;border-radius:3px;font-size:0.8rem;">linear-gradient(315deg, transparent Xpx, COLOR 0px)</code></p>
+    </div>
+  </section>
+
+  <!-- ═══ 5. Shadows ═══ -->
+  <section id="shadows">
+    <div class="container">
+      <span class="section-label">05</span>
+      <h2 class="section-title">Sombras</h2>
+      <p class="section-desc">Box shadows utilizadas en el sitio para dar profundidad a los elementos.</p>
+
+      <div class="shadows-grid">
+        <div class="shadow-demo" style="box-shadow: rgba(34,28,70,0.2) 2px 2px 0px 0px">
+          <span>Button Shadow</span>
+          <code>2px 2px 0 0 deep-blue/20%</code>
+        </div>
+        <div class="shadow-demo" style="box-shadow: rgba(0,0,0,0.2) 0px 0px 18px 0px">
+          <span>Overlay Shadow</span>
+          <code>0 0 18px 0 black/20%</code>
+        </div>
+        <div class="shadow-demo" style="box-shadow: rgb(199,197,199) -3px -3px 5px -2px">
+          <span>Card Inner</span>
+          <code>-3px -3px 5px -2px gray</code>
+        </div>
+        <div class="shadow-demo" style="box-shadow: rgb(199,197,199) 0px 0px 12px 2px">
+          <span>Card Diffuse</span>
+          <code>0 0 12px 2px gray</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 6. Contrast Analysis ═══ -->
+  <section id="contrast" style="background:var(--white)">
+    <div class="container">
+      <span class="section-label">06</span>
+      <h2 class="section-title">Análisis de Contraste WCAG</h2>
+      <p class="section-desc">Evaluación de las combinaciones texto/fondo según los estándares de accesibilidad WCAG 2.1.</p>
+
+      <!-- FAIL -->
+      <div class="contrast-section">
+        <h3 class="contrast-subtitle">
+          <span class="badge badge-fail">FALLA AA</span>
+          Problemas de Contraste
+        </h3>
+        <div class="contrast-grid">
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#ffffff; color:#26a3dd">"Buscar" header</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#26a3dd"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-hex">#26a3dd / #fff</span>
+              </div>
+              <span class="contrast-ratio fail">2.85:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#f8f8f8; color:#7f7f9d">Info cookies</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#7f7f9d"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#f8f8f8"></div>
+                <span class="contrast-hex">#7f7f9d / #f8f8f8</span>
+              </div>
+              <span class="contrast-ratio fail">3.64:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#3860be; color:#555555">Filter icon</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#555555"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#3860be"></div>
+                <span class="contrast-hex">#555 / #3860be</span>
+              </div>
+              <span class="contrast-ratio fail">1.27:1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AA only -->
+      <div class="contrast-section">
+        <h3 class="contrast-subtitle">
+          <span class="badge badge-aa">PASA AA</span>
+          Cumplen AA, no AAA
+        </h3>
+        <div class="contrast-grid">
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#ffffff; color:#3860be">"Más información"</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#3860be"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-hex">#3860be / #fff</span>
+              </div>
+              <span class="contrast-ratio aa">5.86:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#346e4a; color:#ffffff">"Apply" button</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#346e4a"></div>
+                <span class="contrast-hex">#fff / #346e4a</span>
+              </div>
+              <span class="contrast-ratio aa">6.04:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#ffffff; color:#1b51dc">"Skip to content"</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#1b51dc"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-hex">#1b51dc / #fff</span>
+              </div>
+              <span class="contrast-ratio aa">6.45:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#dafcdb; color:#5a5469">Texto en menú</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#5a5469"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#dafcdb"></div>
+                <span class="contrast-hex">#5a5469 / #dafcdb</span>
+              </div>
+              <span class="contrast-ratio aa">6.51:1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AAA -->
+      <div class="contrast-section">
+        <h3 class="contrast-subtitle">
+          <span class="badge badge-aaa">PASA AAA</span>
+          Combinaciones Excelentes
+        </h3>
+        <div class="contrast-grid">
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#ffffff; color:#221c46">Texto principal / blanco</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#221c46"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-hex">#221c46 / #fff</span>
+              </div>
+              <span class="contrast-ratio aaa">15.88:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#221c46; color:#ffffff">Blanco / Deep Blue</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#ffffff"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#221c46"></div>
+                <span class="contrast-hex">#fff / #221c46</span>
+              </div>
+              <span class="contrast-ratio aaa">15.88:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#00eb5e; color:#221c46">CTA: Deep Blue / Green</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#221c46"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#00eb5e"></div>
+                <span class="contrast-hex">#221c46 / #00eb5e</span>
+              </div>
+              <span class="contrast-ratio aaa">9.86:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#fdeec1; color:#221c46">Stats / Yellow bg</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#221c46"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#fdeec1"></div>
+                <span class="contrast-hex">#221c46 / #fdeec1</span>
+              </div>
+              <span class="contrast-ratio aaa">13.74:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#aefcc9; color:#221c46">Tabla / Green bg</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#221c46"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#aefcc9"></div>
+                <span class="contrast-hex">#221c46 / #aefcc9</span>
+              </div>
+              <span class="contrast-ratio aaa">13.28:1</span>
+            </div>
+          </div>
+          <div class="contrast-card">
+            <div class="contrast-preview" style="background:#362f54; color:#e1e2f8">Footer nav</div>
+            <div class="contrast-details">
+              <div class="contrast-colors">
+                <div class="contrast-dot" style="background:#e1e2f8"></div>
+                <span class="contrast-arrow">sobre</span>
+                <div class="contrast-dot" style="background:#362f54"></div>
+                <span class="contrast-hex">#e1e2f8 / #362f54</span>
+              </div>
+              <span class="contrast-ratio aaa">9.72:1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 7. Design Tokens ═══ -->
+  <section id="tokens">
+    <div class="container">
+      <span class="section-label">07</span>
+      <h2 class="section-title">Design Tokens (CSS Variables)</h2>
+      <p class="section-desc">Sistema de tokens semánticos con prefijo <code style="background:var(--bg-info);padding:0.15rem 0.4rem;border-radius:3px;font-size:0.85rem;">--ssa-color-palette-plx-semantic-*</code></p>
+
+      <table class="tokens-table">
+        <thead>
+          <tr>
+            <th style="width:30px"></th>
+            <th>Token</th>
+            <th>Valor</th>
+            <th>Categoría</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="token-swatch" style="background:#221c46"></span></td><td class="token-name">--color-brand-primary</td><td>#221c46</td><td>Brand</td></tr>
+          <tr><td><span class="token-swatch" style="background:#00eb5e"></span></td><td class="token-name">--color-brand-secondary</td><td>#00eb5e</td><td>Brand</td></tr>
+          <tr><td><span class="token-swatch" style="background:#17ccf9"></span></td><td class="token-name">--color-brand-tertiary</td><td>#17ccf9</td><td>Brand</td></tr>
+          <tr><td><span class="token-swatch" style="background:#ffdc37"></span></td><td class="token-name">--color-brand-quaternary</td><td>#ffdc37</td><td>Brand</td></tr>
+          <tr><td><span class="token-swatch" style="background:#ff7375"></span></td><td class="token-name">--color-brand-quinary</td><td>#ff7375</td><td>Brand</td></tr>
+          <tr style="background:var(--bg-primary)"><td></td><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Texto</td></tr>
+          <tr><td><span class="token-swatch" style="background:#221c46"></span></td><td class="token-name">--color-text-primary</td><td>#221c46</td><td>Text</td></tr>
+          <tr><td><span class="token-swatch" style="background:#463f5f"></span></td><td class="token-name">--color-text-secondary</td><td>#463f5f</td><td>Text</td></tr>
+          <tr><td><span class="token-swatch" style="background:#5a5469"></span></td><td class="token-name">--color-text-tertiary</td><td>#5a5469</td><td>Text</td></tr>
+          <tr><td><span class="token-swatch" style="background:#b5b2bc"></span></td><td class="token-name">--color-text-disabled</td><td>#b5b2bc</td><td>Text</td></tr>
+          <tr><td><span class="token-swatch" style="background:#1b51dc"></span></td><td class="token-name">--color-text-link</td><td>#1b51dc</td><td>Text</td></tr>
+          <tr><td><span class="token-swatch" style="background:#ffffff;border:1px solid #ddd"></span></td><td class="token-name">--color-text-inverse</td><td>#ffffff</td><td>Text</td></tr>
+          <tr style="background:var(--bg-primary)"><td></td><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Interactive / CTA</td></tr>
+          <tr><td><span class="token-swatch" style="background:#00eb5e"></span></td><td class="token-name">--color-cta-primary</td><td>#00eb5e</td><td>CTA</td></tr>
+          <tr><td><span class="token-swatch" style="background:#c7fcca"></span></td><td class="token-name">--color-cta-primary-hover</td><td>#c7fcca</td><td>CTA</td></tr>
+          <tr><td><span class="token-swatch" style="background:#00330e"></span></td><td class="token-name">--color-cta-primary-pressed</td><td>#00330e</td><td>CTA</td></tr>
+          <tr><td><span class="token-swatch" style="background:#1b51dc"></span></td><td class="token-name">--color-outline-focus</td><td>#1b51dc</td><td>Focus</td></tr>
+          <tr style="background:var(--bg-primary)"><td></td><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Escala de Grises</td></tr>
+          <tr><td><span class="token-swatch" style="background:#f2f2f2"></span></td><td class="token-name">--gray-10</td><td>#f2f2f2</td><td>Gray</td></tr>
+          <tr><td><span class="token-swatch" style="background:#dbdbdc"></span></td><td class="token-name">--gray-20</td><td>#dbdbdc</td><td>Gray</td></tr>
+          <tr><td><span class="token-swatch" style="background:#bfbfbf"></span></td><td class="token-name">--gray-30</td><td>#bfbfbf</td><td>Gray</td></tr>
+          <tr><td><span class="token-swatch" style="background:#484848"></span></td><td class="token-name">--gray-70</td><td>#484848</td><td>Gray</td></tr>
+          <tr><td><span class="token-swatch" style="background:#323232"></span></td><td class="token-name">--gray-80</td><td>#323232</td><td>Gray</td></tr>
+          <tr><td><span class="token-swatch" style="background:#222222"></span></td><td class="token-name">--gray-90</td><td>#222222</td><td>Gray</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══ 8. Typography ═══ -->
+  <section id="typography" style="background:var(--white)">
+    <div class="container">
+      <span class="section-label">08</span>
+      <h2 class="section-title">Tipografía</h2>
+      <p class="section-desc">Análisis de la tipografía del sitio: familias, pesos, escala y jerarquía.</p>
+
+      <!-- Font Hero Card -->
+      <div class="font-hero">
+        <div class="font-hero-specimen">
+          <div class="specimen-title">TT Travels</div>
+          <div class="specimen-alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 &iexcl;&iquest;?!&amp;@#%</div>
+        </div>
+        <div class="font-hero-meta">
+          <div class="font-meta-row">
+            <span class="font-meta-label">Familia</span>
+            <span class="font-meta-value">TT Travels</span>
+          </div>
+          <div class="font-meta-row">
+            <span class="font-meta-label">Fallback</span>
+            <span class="font-meta-value">Verdana, sans-serif</span>
+          </div>
+          <div class="font-meta-row">
+            <span class="font-meta-label">Formato</span>
+            <span class="font-meta-value">WOFF2</span>
+          </div>
+          <div class="font-meta-row">
+            <span class="font-meta-label">Base size</span>
+            <span class="font-meta-value">16px</span>
+          </div>
+          <div class="font-meta-row">
+            <span class="font-meta-label">Line height</span>
+            <span class="font-meta-value">1.5 (body) / 1.35 (h)</span>
+          </div>
+          <div class="font-meta-row">
+            <span class="font-meta-label">Token</span>
+            <span class="font-meta-value" style="font-size:0.7rem;color:var(--link-blue)">--ssa-font-stacks-tt-travels</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Strip -->
+      <h3 class="swatch-group-title">Pesos Disponibles (@font-face)</h3>
+      <div class="weight-strip">
+        <div class="weight-cell">
+          <div class="weight-demo" style="font-weight:500">Aa</div>
+          <div class="weight-label">Medium</div>
+          <div class="weight-num">500</div>
+        </div>
+        <div class="weight-cell">
+          <div class="weight-demo" style="font-weight:600">Aa</div>
+          <div class="weight-label">DemiBold</div>
+          <div class="weight-num">600</div>
+        </div>
+        <div class="weight-cell">
+          <div class="weight-demo" style="font-weight:700">Aa</div>
+          <div class="weight-label">Bold</div>
+          <div class="weight-num">700</div>
+        </div>
+        <div class="weight-cell">
+          <div class="weight-demo" style="font-weight:800">Aa</div>
+          <div class="weight-label">ExtraBold</div>
+          <div class="weight-num">800</div>
+        </div>
+        <div class="weight-cell">
+          <div class="weight-demo" style="font-weight:900">Aa</div>
+          <div class="weight-label">Black</div>
+          <div class="weight-num">900</div>
+        </div>
+      </div>
+
+      <!-- Otras fuentes detectadas -->
+      <h3 class="swatch-group-title">Otras Fuentes Detectadas</h3>
+      <div class="type-tokens-grid" style="margin-bottom:2.5rem">
+        <div class="type-token-card">
+          <div class="type-token-name">Icomoon (Icon Font)</div>
+          <div class="type-token-value">weight: normal &middot; format: woff<br>Uso: Iconos del sistema de diseño</div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">Stacks Alternativos (tokens CSS)</div>
+          <div class="type-token-value">--ssa-font-stacks-arial: Arial, Helvetica Neue<br>--ssa-font-stacks-roboto: Roboto, sans-serif<br>--ssa-font-stacks-playfair-display: Playfair Display, serif<br>--ssa-font-stacks-sansapro: SansaPro, Arial</div>
+        </div>
+      </div>
+
+      <!-- Type Scale -->
+      <h3 class="swatch-group-title">Escala Tipográfica</h3>
+      <div class="type-scale">
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H1</span>
+          <span class="type-scale-sample" style="font-size:42px; font-weight:900; line-height:1.35">Beneficios para empleados</span>
+          <div class="type-scale-specs">
+            <span>42px</span><span>Black 900</span><span>LH 1.35</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H2</span>
+          <span class="type-scale-sample" style="font-size:42px; font-weight:700; line-height:1.35">Miles de empresas ya se</span>
+          <div class="type-scale-specs">
+            <span>42px</span><span>Bold 700</span><span>LH 1.35</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H2</span>
+          <span class="type-scale-sample" style="font-size:24px; font-weight:700; line-height:1.3; letter-spacing:-0.8px">Pluxee Espa&ntilde;a (footer)</span>
+          <div class="type-scale-specs">
+            <span>24px</span><span>Bold 700</span><span>LH 1.30</span><span>LS -0.8px</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H3</span>
+          <span class="type-scale-sample" style="font-size:24px; font-weight:700; line-height:1.3">Retribución flexible</span>
+          <div class="type-scale-specs">
+            <span>24px</span><span>Bold 700</span><span>LH 1.30</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H3</span>
+          <span class="type-scale-sample" style="font-size:20px; font-weight:700; line-height:1.3; letter-spacing:-1px">Productividad laboral: &iquest;qué es?</span>
+          <div class="type-scale-specs">
+            <span>20px</span><span>Bold 700</span><span>LH 1.30</span><span>LS -1px</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H4</span>
+          <span class="type-scale-sample" style="font-size:20px; font-weight:700; line-height:1.25; letter-spacing:-1px">Con Cobee by Pluxee</span>
+          <div class="type-scale-specs">
+            <span>20px</span><span>Bold 700</span><span>LH 1.25</span><span>LS -1px</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H3</span>
+          <span class="type-scale-sample" style="font-size:16px; font-weight:700; line-height:1.5; letter-spacing:-0.8px">Pluxee Restaurante</span>
+          <div class="type-scale-specs">
+            <span>16px</span><span>Bold 700</span><span>LH 1.50</span><span>LS -0.8px</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H5</span>
+          <span class="type-scale-sample" style="font-size:16px; font-weight:700; line-height:1.25">Con otras soluciones</span>
+          <div class="type-scale-specs">
+            <span>16px</span><span>Bold 700</span><span>LH 1.25</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">H2</span>
+          <span class="type-scale-sample" style="font-size:14px; font-weight:500; line-height:1.35; letter-spacing:-0.8px; color:var(--text-tertiary)">Soluciones Pluxee (nav)</span>
+          <div class="type-scale-specs">
+            <span>14px</span><span>Medium 500</span><span>LH 1.35</span><span>LS -0.8px</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">p</span>
+          <span class="type-scale-sample" style="font-size:16px; font-weight:500; line-height:1.5">Impulsa la motivación de tu equipo con el líder global</span>
+          <div class="type-scale-specs">
+            <span>16px</span><span>Medium 500</span><span>LH 1.50</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">p</span>
+          <span class="type-scale-sample" style="font-size:14px; font-weight:500; line-height:1.43">Estas cookies son necesarias para que el sitio</span>
+          <div class="type-scale-specs">
+            <span>14px</span><span>Medium 500</span><span>LH 1.43</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">a</span>
+          <span class="type-scale-sample" style="font-size:16px; font-weight:600; line-height:1.5; letter-spacing:-0.8px">Retribución Flexible (nav)</span>
+          <div class="type-scale-specs">
+            <span>16px</span><span>DemiBold 600</span><span>LH 1.50</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">a</span>
+          <span class="type-scale-sample" style="font-size:14px; font-weight:600; line-height:1.5; letter-spacing:-0.8px">Cobee by Pluxee (footer)</span>
+          <div class="type-scale-specs">
+            <span>14px</span><span>DemiBold 600</span><span>LH 1.50</span>
+          </div>
+        </div>
+        <div class="type-scale-row">
+          <span class="type-scale-tag">a</span>
+          <span class="type-scale-sample" style="font-size:12px; font-weight:700; line-height:1.5">Sobre nosotros (footer legal)</span>
+          <div class="type-scale-specs">
+            <span>12px</span><span>Bold 700</span><span>LH 1.50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Type Sizes Summary -->
+      <h3 class="swatch-group-title">Tamaños Detectados</h3>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2.5rem">
+        <div style="background:var(--deep-blue);color:var(--ultra-green);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:700">42px</div>
+        <div style="background:var(--bg-info);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:600">24px</div>
+        <div style="background:var(--bg-info);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:600">20px</div>
+        <div style="background:var(--bg-info);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:600">18px</div>
+        <div style="background:var(--deep-blue);color:var(--white);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:700">16px <span style="font-weight:400;opacity:0.6">base</span></div>
+        <div style="background:var(--bg-info);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:600">14px</div>
+        <div style="background:var(--bg-info);padding:0.4rem 1rem;border-radius:6px;font-family:'SF Mono','Fira Code',monospace;font-size:0.8rem;font-weight:600">12px</div>
+      </div>
+
+      <!-- Font Tokens -->
+      <h3 class="swatch-group-title">Design Tokens Tipográficos</h3>
+      <table class="tokens-table">
+        <thead>
+          <tr>
+            <th>Token</th>
+            <th>Valor</th>
+            <th>Categoría</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:var(--bg-primary)"><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Font Family</td></tr>
+          <tr><td class="token-name">--ssa-font-stacks-tt-travels</td><td>"TT Travels", Verdana, sans-serif</td><td>Primary</td></tr>
+          <tr><td class="token-name">--ssa-font-stacks-arial</td><td>Arial, "Helvetica Neue", Helvetica, sans-serif</td><td>System</td></tr>
+          <tr><td class="token-name">--ssa-font-stacks-roboto</td><td>"Roboto", sans-serif</td><td>Alt</td></tr>
+          <tr style="background:var(--bg-primary)"><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Font Size Scale</td></tr>
+          <tr><td class="token-name">--font-size-base</td><td>1rem (16px)</td><td>Base</td></tr>
+          <tr><td class="token-name">--font-size-xl</td><td>2.25rem (36px)</td><td>XL</td></tr>
+          <tr><td class="token-name">--font-size-h1</td><td>2.027rem (32.4px)</td><td>H1</td></tr>
+          <tr><td class="token-name">--font-size-h2</td><td>1.802rem (28.8px)</td><td>H2</td></tr>
+          <tr><td class="token-name">--font-size-h3</td><td>1.602rem (25.6px)</td><td>H3</td></tr>
+          <tr><td class="token-name">--font-size-h4</td><td>1.424rem (22.8px)</td><td>H4</td></tr>
+          <tr><td class="token-name">--font-size-h5</td><td>1.266rem (20.3px)</td><td>H5</td></tr>
+          <tr><td class="token-name">--font-size-h6</td><td>1.125rem (18px)</td><td>H6</td></tr>
+          <tr><td class="token-name">--font-size-s</td><td>0.889rem (14.2px)</td><td>Small</td></tr>
+          <tr><td class="token-name">--font-size-xs</td><td>0.79rem (12.6px)</td><td>X-Small</td></tr>
+          <tr style="background:var(--bg-primary)"><td colspan="3" style="font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-tertiary)">Line Height</td></tr>
+          <tr><td class="token-name">--line-height</td><td>1.5</td><td>Body</td></tr>
+          <tr><td class="token-name">--line-height-heading</td><td>1.3</td><td>Headings</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Observations -->
+      <h3 class="swatch-group-title">Observaciones Tipográficas</h3>
+      <div class="reco-grid">
+        <div class="reco-card strength">
+          <div class="reco-card-title">Fuente &uacute;nica consistente</div>
+          <div class="reco-card-text">Todo el sitio usa exclusivamente TT Travels en 5 pesos (500-900), dando una identidad tipográfica muy cohesiva.</div>
+        </div>
+        <div class="reco-card strength">
+          <div class="reco-card-title">Jerarquía clara</div>
+          <div class="reco-card-text">Buen contraste visual entre niveles de encabezado (42px &rarr; 24px &rarr; 20px &rarr; 16px) con pesos diferenciados.</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">H2 con 3 tamaños distintos</div>
+          <div class="reco-card-text">Se detectan H2 a 42px, 24px y 14px. Esto rompe la jerarquía semántica: un H2 de menú a 14px es menor que los H3.</div>
+          <div class="reco-card-fix">Usar H4/H5 para elementos menores</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Letter-spacing inconsistente</div>
+          <div class="reco-card-text">Mezcla de normal, -0.8px y -1px en encabezados del mismo nivel. Unificar por nivel de jerarquía.</div>
+          <div class="reco-card-fix">Estandarizar LS por heading level</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 9. Spacing ═══ -->
+  <section id="spacing">
+    <div class="container">
+      <span class="section-label">09</span>
+      <h2 class="section-title">Spacing &amp; Border Radius</h2>
+      <p class="section-desc">An&aacute;lisis de los espaciados (padding, margin, gap) y bordes redondeados utilizados en el sitio.</p>
+
+      <!-- Spacing Scale Histogram -->
+      <h3 class="swatch-group-title">Escala de Spacing (frecuencia de uso)</h3>
+      <div class="spacing-scale">
+        <div class="spacing-bar-col"><div class="spacing-bar-count">35</div><div class="spacing-bar" style="height:16px;background:var(--boldy-blue)"></div><div class="spacing-bar-label">4px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">139</div><div class="spacing-bar" style="height:66px;background:var(--ultra-green)"></div><div class="spacing-bar-label">8px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">23</div><div class="spacing-bar" style="height:11px;background:var(--boldy-blue)"></div><div class="spacing-bar-label">12px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">343</div><div class="spacing-bar" style="height:160px;background:var(--deep-blue)"></div><div class="spacing-bar-label">16px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">25</div><div class="spacing-bar" style="height:12px;background:var(--boldy-blue)"></div><div class="spacing-bar-label">20px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">173</div><div class="spacing-bar" style="height:80px;background:var(--ultra-green)"></div><div class="spacing-bar-label">24px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">56</div><div class="spacing-bar" style="height:26px;background:var(--very-yellow)"></div><div class="spacing-bar-label">32px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">17</div><div class="spacing-bar" style="height:8px;background:var(--boldy-blue)"></div><div class="spacing-bar-label">48px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">50</div><div class="spacing-bar" style="height:24px;background:var(--very-yellow)"></div><div class="spacing-bar-label">56px</div></div>
+        <div class="spacing-bar-col"><div class="spacing-bar-count">78</div><div class="spacing-bar" style="height:36px;background:var(--coral)"></div><div class="spacing-bar-label">64px</div></div>
+      </div>
+
+      <!-- Spacing Tokens -->
+      <h3 class="swatch-group-title">Design Tokens de Spacing</h3>
+      <div class="type-tokens-grid" style="margin-bottom:2.5rem">
+        <div class="type-token-card">
+          <div class="type-token-name">--space-xs</div>
+          <div class="type-token-value">0.5rem (8px)</div>
+          <div style="margin-top:0.5rem;height:8px;background:var(--ultra-green);border-radius:2px;width:8px"></div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">--space-s</div>
+          <div class="type-token-value">0.75rem (12px)</div>
+          <div style="margin-top:0.5rem;height:8px;background:var(--ultra-green);border-radius:2px;width:12px"></div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">--space-m</div>
+          <div class="type-token-value">1rem (16px)</div>
+          <div style="margin-top:0.5rem;height:8px;background:var(--ultra-green);border-radius:2px;width:16px"></div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">--space-l</div>
+          <div class="type-token-value">1.5rem (24px)</div>
+          <div style="margin-top:0.5rem;height:8px;background:var(--ultra-green);border-radius:2px;width:24px"></div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">--space-xl</div>
+          <div class="type-token-value">3rem (48px)</div>
+          <div style="margin-top:0.5rem;height:8px;background:var(--ultra-green);border-radius:2px;width:48px"></div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">--base-border-radius</div>
+          <div class="type-token-value">2px</div>
+          <div style="margin-top:0.5rem;width:24px;height:24px;background:var(--bg-info);border:2px solid var(--deep-blue);border-radius:2px"></div>
+        </div>
+      </div>
+
+      <!-- Anatomy -->
+      <h3 class="swatch-group-title">Anatom&iacute;a de Secci&oacute;n T&iacute;pica</h3>
+      <div class="spacing-anatomy">
+        <div class="anatomy-box">
+          <div class="anatomy-layer margin-layer">
+            <span class="anatomy-label m-label">margin</span>
+            <div class="anatomy-val">0 64px (lateral) &middot; 0 0 56px 0 (inferior t&iacute;pico)</div>
+            <div class="anatomy-layer padding-layer">
+              <span class="anatomy-label p-label">padding</span>
+              <div class="anatomy-val">56px 0 (secciones) &middot; 24px (cards) &middot; 9px 24px (botones)</div>
+              <div class="anatomy-layer content-layer">
+                Contenido<br>
+                <span style="font-weight:400;font-size:0.75rem;color:var(--text-tertiary)">max-width: 1077px (boxed)<br>gap: 8px &middot; 32px (flex)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Padding Table -->
+      <h3 class="swatch-group-title">Paddings M&aacute;s Frecuentes</h3>
+      <table class="spacing-table">
+        <thead>
+          <tr><th>Valor</th><th>Usos</th><th>Elementos</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="val-mono">0 16px</td><td><span class="count-badge">119</span></td><td class="el-tag">CTA header, columnas, layout</td></tr>
+          <tr><td class="val-mono">56px 0</td><td><span class="count-badge">18</span></td><td class="el-tag">Secciones principales (vertical)</td></tr>
+          <tr><td class="val-mono">24px</td><td><span class="count-badge">16</span></td><td class="el-tag">Testimonial cards, containers</td></tr>
+          <tr><td class="val-mono">9px 24px</td><td><span class="count-badge">12</span></td><td class="el-tag">Botones CTA (primary-button)</td></tr>
+          <tr><td class="val-mono">24px 24px 32px 24px</td><td><span class="count-badge">8</span></td><td class="el-tag">Cards con fondo blanco</td></tr>
+          <tr><td class="val-mono">8px 0</td><td><span class="count-badge">26</span></td><td class="el-tag">Menu items</td></tr>
+          <tr><td class="val-mono">12px 30px</td><td><span class="count-badge">6</span></td><td class="el-tag">Botones slider nav</td></tr>
+          <tr><td class="val-mono">32px 64px 32px 60px</td><td><span class="count-badge">5</span></td><td class="el-tag">Submen&uacute; openers</td></tr>
+          <tr><td class="val-mono">18px 16-18px</td><td><span class="count-badge">8</span></td><td class="el-tag">Table cells (comparativas)</td></tr>
+          <tr><td class="val-mono">10px 20px</td><td><span class="count-badge">4</span></td><td class="el-tag">Cookie buttons</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Margin Table -->
+      <h3 class="swatch-group-title">Margins M&aacute;s Frecuentes</h3>
+      <table class="spacing-table">
+        <thead>
+          <tr><th>Valor</th><th>Usos</th><th>Elementos</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="val-mono">0 -16px</td><td><span class="count-badge">47</span></td><td class="el-tag">Row inner (negative margin pattern)</td></tr>
+          <tr><td class="val-mono">0 64px</td><td><span class="count-badge">31</span></td><td class="el-tag">Contenedores boxed (centrado lateral)</td></tr>
+          <tr><td class="val-mono">16px 0 0 0</td><td><span class="count-badge">23</span></td><td class="el-tag">CTA wrappers, headings</td></tr>
+          <tr><td class="val-mono">0 0 24px 0</td><td><span class="count-badge">15</span></td><td class="el-tag">P&aacute;rrafos (margen inferior)</td></tr>
+          <tr><td class="val-mono">0 0 16px 0</td><td><span class="count-badge">13</span></td><td class="el-tag">H2 headings, list items</td></tr>
+          <tr><td class="val-mono">24px 0 0 0</td><td><span class="count-badge">12</span></td><td class="el-tag">Slick dots, CTA buttons</td></tr>
+          <tr><td class="val-mono">0 auto</td><td><span class="count-badge">11</span></td><td class="el-tag">Menu items centrados</td></tr>
+          <tr><td class="val-mono">0 0 32px 0</td><td><span class="count-badge">11</span></td><td class="el-tag">Containers (margen inferior medio)</td></tr>
+          <tr><td class="val-mono">0 0 56px 0</td><td><span class="count-badge">7</span></td><td class="el-tag">Section headings (margen inferior grande)</td></tr>
+          <tr><td class="val-mono">0 0 64px 0</td><td><span class="count-badge">3</span></td><td class="el-tag">Slider nav bottom</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Gap -->
+      <h3 class="swatch-group-title">Gap (Flex/Grid)</h3>
+      <table class="spacing-table">
+        <thead>
+          <tr><th>Valor</th><th>Usos</th><th>Display</th><th>Elementos</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="val-mono">8px</td><td><span class="count-badge">5</span></td><td>flex</td><td class="el-tag">Play/pause buttons, blog cards</td></tr>
+          <tr><td class="val-mono">32px</td><td><span class="count-badge">1</span></td><td>flex</td><td class="el-tag">Blog articles container</td></tr>
+        </tbody>
+      </table>
+      <div class="reco-grid" style="margin-top:0;margin-bottom:2.5rem">
+        <div class="reco-card issue">
+          <div class="reco-card-title">Uso m&iacute;nimo de gap</div>
+          <div class="reco-card-text">Solo 6 elementos usan la propiedad gap. La mayor&iacute;a del espaciado se logra con padding y margin negativos, un patr&oacute;n m&aacute;s fr&aacute;gil.</div>
+          <div class="reco-card-fix">Adoptar gap en layouts flex/grid</div>
+        </div>
+      </div>
+
+      <!-- Border Radius Gallery -->
+      <h3 class="swatch-group-title">Border Radius</h3>
+      <div class="radius-gallery">
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:0px"></div>
+          <div class="radius-value">0px</div>
+          <div class="radius-count">Mayoritario</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:1px"></div>
+          <div class="radius-value">1px</div>
+          <div class="radius-count">8 usos</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:2px"></div>
+          <div class="radius-value">2px</div>
+          <div class="radius-count">15 usos &middot; base token</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:3px"></div>
+          <div class="radius-value">3px</div>
+          <div class="radius-count">2 usos</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:17px"></div>
+          <div class="radius-value">17px</div>
+          <div class="radius-count">1 uso</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:20px"></div>
+          <div class="radius-value">20px</div>
+          <div class="radius-count">3 usos</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:50px"></div>
+          <div class="radius-value">50px</div>
+          <div class="radius-count">1 uso</div>
+        </div>
+        <div class="radius-card">
+          <div class="radius-preview" style="border-radius:55%"></div>
+          <div class="radius-value">55%</div>
+          <div class="radius-count">8 usos &middot; dots</div>
+        </div>
+      </div>
+
+      <!-- Container Widths -->
+      <h3 class="swatch-group-title">Anchos de Contenedor</h3>
+      <div class="type-tokens-grid" style="margin-bottom:2.5rem">
+        <div class="type-token-card">
+          <div class="type-token-name">Container boxed</div>
+          <div class="type-token-value">max-width: 1077px (content)<br>= viewport - 2 &times; 64px margin</div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">Container full</div>
+          <div class="type-token-value">max-width: 1392px<br>Slider containers</div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">Half container</div>
+          <div class="type-token-value">max-width: 50%<br>Text+Image blocks (2 cols)</div>
+        </div>
+        <div class="type-token-card">
+          <div class="type-token-name">Blog card max</div>
+          <div class="type-token-value">max-width: 688px<br>Article cards</div>
+        </div>
+      </div>
+
+      <!-- Observations -->
+      <h3 class="swatch-group-title">Observaciones de Spacing</h3>
+      <div class="reco-grid">
+        <div class="reco-card strength">
+          <div class="reco-card-title">Tokens de spacing definidos</div>
+          <div class="reco-card-text">Sistema de 5 niveles (xs/s/m/l/xl) con escala coherente de 8px a 48px, siguiendo un ritmo l&oacute;gico.</div>
+        </div>
+        <div class="reco-card strength">
+          <div class="reco-card-title">Ritmo vertical consistente</div>
+          <div class="reco-card-text">Las secciones principales usan 56px de padding vertical de forma consistente, creando un ritmo visual predecible.</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Border radius casi nulo</div>
+          <div class="reco-card-text">El token base es 2px y la gran mayor&iacute;a de elementos tiene 0px. Esto es coherente con el estilo angular de los corner-cuts, pero limita la suavidad visual.</div>
+          <div class="reco-card-fix">Intencional: alineado con corner-cut identity</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Negative margin pattern</div>
+          <div class="reco-card-text">47 elementos usan margin: 0 -16px (patr&oacute;n de row/gutter). Es funcional pero fr&aacute;gil y puede sustituirse por gap en flex/grid.</div>
+          <div class="reco-card-fix">Migrar a CSS gap cuando sea posible</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ 10. Stats + Recommendations ═══ -->
+  <section id="recommendations">
+    <div class="container">
+      <span class="section-label">10</span>
+      <h2 class="section-title">Resumen y Recomendaciones</h2>
+      <p class="section-desc">Estadísticas generales y hallazgos clave de la auditoría.</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" style="color:#221c46">17</div>
+          <div class="stat-label">Colores de texto</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#17ccf9">26</div>
+          <div class="stat-label">Colores de fondo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#ff7375">25</div>
+          <div class="stat-label">Colores de borde</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#ffdc37">7</div>
+          <div class="stat-label">Gradientes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#00eb5e">100+</div>
+          <div class="stat-label">CSS Variables</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#00eb5e">20+</div>
+          <div class="stat-label">Cumplen AAA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#ff7375">4</div>
+          <div class="stat-label">Fallan WCAG AA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:#221c46">4</div>
+          <div class="stat-label">Sombras</div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title" style="margin-top:2rem; color:#1a7a3a">Fortalezas</h3>
+      <div class="reco-grid" style="margin-bottom:2.5rem">
+        <div class="reco-card strength">
+          <div class="reco-card-title">Tokens bien estructurados</div>
+          <div class="reco-card-text">Sistema robusto de 100+ design tokens con naming semántico claro y prefijo consistente.</div>
+        </div>
+        <div class="reco-card strength">
+          <div class="reco-card-title">Excelente contraste principal</div>
+          <div class="reco-card-text">La combinación Deep Blue/blanco alcanza un ratio de 15.88:1 (AAA), muy por encima del mínimo requerido.</div>
+        </div>
+        <div class="reco-card strength">
+          <div class="reco-card-title">Paleta vibrante y diferenciada</div>
+          <div class="reco-card-text">5 colores de marca bien definidos con escalas de tintes consistentes (dimmed, light, base).</div>
+        </div>
+        <div class="reco-card strength">
+          <div class="reco-card-title">Identidad visual única</div>
+          <div class="reco-card-text">El sistema de corner-cuts (esquinas cortadas a 315&deg;) aporta un elemento diferenciador muy reconocible.</div>
+        </div>
+      </div>
+
+      <h3 class="swatch-group-title" style="color:#c0392b">Problemas Detectados</h3>
+      <div class="reco-grid">
+        <div class="reco-card issue">
+          <div class="reco-card-title">Contraste insuficiente en "Buscar"</div>
+          <div class="reco-card-text">#26a3dd sobre blanco solo alcanza 2.85:1 (se requiere 4.5:1 para texto normal).</div>
+          <div class="reco-card-fix">Oscurecer a #1a89c9 o similar</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Texto gris en cookies</div>
+          <div class="reco-card-text">#7f7f9d sobre #f8f8f8 da 3.64:1. No cumple el mínimo AA.</div>
+          <div class="reco-card-fix">Usar #5a5469 (text-tertiary del sistema)</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Negro puro residual (#000)</div>
+          <div class="reco-card-text">216 elementos usan #000000 cuando el estándar de marca es #221c46 (Deep Blue).</div>
+          <div class="reco-card-fix">Migrar a --color-text-primary (#221c46)</div>
+        </div>
+        <div class="reco-card issue">
+          <div class="reco-card-title">Fragmentación de azules en links</div>
+          <div class="reco-card-text">Se detectan 4 azules distintos para enlaces: #1b51dc, #26a3dd, #3860be, #0000ee.</div>
+          <div class="reco-card-fix">Consolidar en max. 2 tonos de enlace</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="audit-footer">
+    <strong>Auditoría de Color, Tipografía &amp; Spacing</strong> &middot; pluxee.es &middot; 10 febrero 2026<br>
+    Auditoría creada por © Luis Pascual con apoyo de Playwright
+  </footer>
+
+</body>
+</html>

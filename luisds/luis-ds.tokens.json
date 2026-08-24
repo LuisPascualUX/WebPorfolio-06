@@ -1,0 +1,4641 @@
+{
+  "$description": "LuisDS Design System — Generated 2026-03-06 — W3C Design Tokens Community Group spec https://design-tokens.github.io/community-group/format/ — Mode: fast",
+  "color": {
+    "brand": {
+      "primary": {
+        "50": {
+          "$type": "color",
+          "$value": "#FFF5F8",
+          "$description": "LuisDS brand primary — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(342.0, 100.0%, 98.0%)",
+              "oklch": "oklch(0.979 0.011 356.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.07,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.67,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 4.3,
+                "lc-on-black": -109.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#FFE7ED",
+          "$description": "LuisDS brand primary — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(345.0, 100.0%, 95.3%)",
+              "oklch": "oklch(0.949 0.027 0.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.17,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 17.91,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 10.2,
+                "lc-on-black": -103.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FCC7D5",
+          "$description": "LuisDS brand primary — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(344.2, 89.8%, 88.4%)",
+              "oklch": "oklch(0.88 0.063 0.8)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.47,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 14.27,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 23.4,
+                "lc-on-black": -88.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#F39EB7",
+          "$description": "LuisDS brand primary — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(342.4, 78.0%, 78.6%)",
+              "oklch": "oklch(0.791 0.105 0.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.02,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 10.39,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 39.6,
+                "lc-on-black": -71.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#DB7194",
+          "$description": "LuisDS brand primary — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(340.2, 59.6%, 65.1%)",
+              "oklch": "oklch(0.68 0.137 0.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 3.09,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 6.8,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 57.6,
+                "lc-on-black": -53.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#870E46",
+          "$description": "LuisDS brand primary — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(332.2, 81.2%, 29.2%)",
+              "oklch": "oklch(0.41 0.156 0.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 9.63,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.18,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 91.7,
+                "lc-on-black": -19.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#952854",
+          "$description": "LuisDS brand primary — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(335.8, 57.7%, 37.1%)",
+              "oklch": "oklch(0.46 0.149 0.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 7.75,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.71,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 86.5,
+                "lc-on-black": -24.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#72133C",
+          "$description": "LuisDS brand primary — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(334.1, 71.4%, 26.1%)",
+              "oklch": "oklch(0.37 0.132 0.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 11.21,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.87,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 95.6,
+                "lc-on-black": -15.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#520629",
+          "$description": "LuisDS brand primary — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(332.4, 86.4%, 17.3%)",
+              "oklch": "oklch(0.29 0.109 360.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 14.82,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.42,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 102.2,
+                "lc-on-black": -9.6,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#320316",
+          "$description": "LuisDS brand primary — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(335.7, 88.7%, 10.4%)",
+              "oklch": "oklch(0.21 0.077 1.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 18.1,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.16,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 107.8,
+                "lc-on-black": -4.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#1E020C",
+          "$description": "LuisDS brand primary — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(338.6, 87.5%, 6.3%)",
+              "oklch": "oklch(0.159 0.055 359.8)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.64,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.07,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.8,
+                "lc-on-black": -2.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      },
+      "secondary": {
+        "50": {
+          "$type": "color",
+          "$value": "#F3FAFC",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(193.3, 60.0%, 97.1%)",
+              "oklch": "oklch(0.98 0.008 217.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.06,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.89,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 3.6,
+                "lc-on-black": -110.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#E1F2F7",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(193.6, 57.9%, 92.5%)",
+              "oklch": "oklch(0.95 0.019 217.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.15,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 18.25,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 9.0,
+                "lc-on-black": -104.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#BADFEB",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(194.7, 55.1%, 82.5%)",
+              "oklch": "oklch(0.881 0.042 219.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.41,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 14.84,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 21.2,
+                "lc-on-black": -91.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#85C6DA",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(194.1, 53.5%, 68.8%)",
+              "oklch": "oklch(0.79 0.072 219.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.89,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 11.09,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 36.4,
+                "lc-on-black": -75.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#4CA6C0",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(193.4, 47.9%, 52.5%)",
+              "oklch": "oklch(0.681 0.093 219.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.79,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 7.52,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 53.5,
+                "lc-on-black": -57.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#008AA7",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(190.4, 100.0%, 32.7%)",
+              "oklch": "oklch(0.586 0.106 219.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 4.04,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 5.19,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 67.0,
+                "lc-on-black": -43.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#00647E",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(192.4, 100.0%, 24.7%)",
+              "oklch": "oklch(0.467 0.088 223.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 6.72,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 3.12,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 82.5,
+                "lc-on-black": -28.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#004960",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(194.4, 100.0%, 18.8%)",
+              "oklch": "oklch(0.378 0.073 227.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 9.9,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.12,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 92.7,
+                "lc-on-black": -18.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#003344",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(195.0, 100.0%, 13.3%)",
+              "oklch": "oklch(0.299 0.058 227.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 13.49,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.56,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 100.4,
+                "lc-on-black": -11.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#001D29",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(197.6, 100.0%, 8.0%)",
+              "oklch": "oklch(0.216 0.042 228.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 17.39,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.21,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 107.3,
+                "lc-on-black": -5.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#001118",
+          "$description": "LuisDS brand secondary (algorithmically derived: primary hue +210°, may need manual adjustment) — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(197.5, 100.0%, 4.7%)",
+              "oklch": "oklch(0.165 0.031 223.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.21,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.09,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.6,
+                "lc-on-black": -2.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      },
+      "accent": {
+        "50": {
+          "$type": "color",
+          "$value": "#F1FCF5",
+          "$description": "LuisDS brand accent (user-provided) — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(141.8, 64.7%, 96.7%)",
+              "oklch": "oklch(0.981 0.015 158.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.05,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.98,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 3.3,
+                "lc-on-black": -110.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#DDF6E7",
+          "$description": "LuisDS brand accent (user-provided) — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(144.0, 58.1%, 91.6%)",
+              "oklch": "oklch(0.951 0.033 159.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.14,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 18.41,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 8.5,
+                "lc-on-black": -104.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#AFE7C8",
+          "$description": "LuisDS brand accent (user-provided) — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(146.8, 53.8%, 79.6%)",
+              "oklch": "oklch(0.881 0.071 160.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.39,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 15.09,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 20.3,
+                "lc-on-black": -92.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#6CD3A0",
+          "$description": "LuisDS brand accent (user-provided) — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(150.3, 53.9%, 62.5%)",
+              "oklch": "oklch(0.791 0.122 160.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.83,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 11.46,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 34.9,
+                "lc-on-black": -76.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#00B577",
+          "$description": "LuisDS brand accent (user-provided) — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(159.4, 100.0%, 35.5%)",
+              "oklch": "oklch(0.682 0.154 160.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.67,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 7.88,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 51.6,
+                "lc-on-black": -59.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#41F6AB",
+          "$description": "LuisDS brand accent (user-provided) — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(155.1, 91.0%, 61.0%)",
+              "oklch": "oklch(0.866 0.178 160.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.4,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 15.0,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 20.9,
+                "lc-on-black": -91.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#007235",
+          "$description": "LuisDS brand accent (user-provided) — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(147.9, 100.0%, 22.4%)",
+              "oklch": "oklch(0.483 0.13 151.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 6.07,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 3.46,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 79.6,
+                "lc-on-black": -31.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#005521",
+          "$description": "LuisDS brand accent (user-provided) — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(143.3, 100.0%, 16.7%)",
+              "oklch": "oklch(0.393 0.111 149.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 9.05,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.32,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 90.4,
+                "lc-on-black": -20.6,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#003C13",
+          "$description": "LuisDS brand accent (user-provided) — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(139.0, 100.0%, 11.8%)",
+              "oklch": "oklch(0.311 0.09 148.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 12.68,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.66,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 98.8,
+                "lc-on-black": -12.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#002309",
+          "$description": "LuisDS brand accent (user-provided) — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(135.4, 100.0%, 6.9%)",
+              "oklch": "oklch(0.224 0.063 148.9)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 16.88,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.24,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 106.3,
+                "lc-on-black": -6.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#001404",
+          "$description": "LuisDS brand accent (user-provided) — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(132.0, 100.0%, 3.9%)",
+              "oklch": "oklch(0.167 0.047 149.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.06,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.1,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.2,
+                "lc-on-black": -2.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      }
+    },
+    "neutral": {
+      "50": {
+        "$type": "color",
+        "$value": "#F8F8F9",
+        "$description": "LuisDS neutral — step 50",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(240.0, 7.7%, 97.5%)",
+            "oklch": "oklch(0.979 0.001 285.0)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 1.06,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 19.79,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 3.9,
+              "lc-on-black": -109.8,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#EDEFF0",
+        "$description": "LuisDS neutral — step 100",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(200.0, 9.1%, 93.5%)",
+            "oklch": "oklch(0.951 0.003 229.8)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 1.15,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 18.21,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 9.2,
+              "lc-on-black": -104.1,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#D4D8DA",
+        "$description": "LuisDS neutral — step 200",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(200.0, 7.5%, 84.3%)",
+            "oklch": "oklch(0.88 0.005 229.3)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 1.43,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 14.63,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 22.0,
+              "lc-on-black": -90.3,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#B5BCBF",
+        "$description": "LuisDS neutral — step 300",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(198.0, 7.2%, 72.9%)",
+            "oklch": "oklch(0.791 0.009 225.4)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 1.92,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 10.91,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 37.1,
+              "lc-on-black": -74.3,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#919A9E",
+        "$description": "LuisDS neutral — step 400",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(198.5, 6.3%, 59.4%)",
+            "oklch": "oklch(0.68 0.012 226.2)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 2.87,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 7.32,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 54.5,
+              "lc-on-black": -56.2,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#869095",
+        "$description": "LuisDS neutral — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(200.0, 6.6%, 55.5%)",
+            "oklch": "oklch(0.647 0.014 229.2)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 3.26,
+                "aa": false,
+                "aa-large": true,
+                "aaa": false,
+                "aaa-large": false
+              },
+              "on-black": {
+                "ratio": 6.44,
+                "aa": true,
+                "aa-large": true,
+                "aaa": false,
+                "aaa-large": true
+              }
+            },
+            "apca": {
+              "lc-on-white": 59.5,
+              "lc-on-black": -51.1,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#515A5E",
+        "$description": "LuisDS neutral — step 600",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(198.5, 7.4%, 34.3%)",
+            "oklch": "oklch(0.461 0.013 226.3)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 7.06,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              },
+              "on-black": {
+                "ratio": 2.97,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              }
+            },
+            "apca": {
+              "lc-on-white": 84.1,
+              "lc-on-black": -26.6,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#3A4145",
+        "$description": "LuisDS neutral — step 700",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(201.8, 8.7%, 24.9%)",
+            "oklch": "oklch(0.37 0.012 232.8)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 10.39,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              },
+              "on-black": {
+                "ratio": 2.02,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              }
+            },
+            "apca": {
+              "lc-on-white": 94.2,
+              "lc-on-black": -17.0,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#272C2F",
+        "$description": "LuisDS neutral — step 800",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(202.5, 9.3%, 16.9%)",
+            "oklch": "oklch(0.289 0.009 234.1)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 14.12,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              },
+              "on-black": {
+                "ratio": 1.49,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              }
+            },
+            "apca": {
+              "lc-on-white": 101.9,
+              "lc-on-black": -9.9,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#15191B",
+        "$description": "LuisDS neutral — step 900",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(200.0, 12.5%, 9.4%)",
+            "oklch": "oklch(0.21 0.007 229.3)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 17.7,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              },
+              "on-black": {
+                "ratio": 1.19,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              }
+            },
+            "apca": {
+              "lc-on-white": 108.1,
+              "lc-on-black": -4.5,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#0B0E0F",
+        "$description": "LuisDS neutral — step 950",
+        "$extensions": {
+          "formats": {
+            "hsl": "hsl(195.0, 15.4%, 5.1%)",
+            "oklch": "oklch(0.161 0.005 219.9)"
+          },
+          "a11y": {
+            "wcag": {
+              "on-white": {
+                "ratio": 19.37,
+                "aa": true,
+                "aa-large": true,
+                "aaa": true,
+                "aaa-large": true
+              },
+              "on-black": {
+                "ratio": 1.08,
+                "aa": false,
+                "aa-large": false,
+                "aaa": false,
+                "aaa-large": false
+              }
+            },
+            "apca": {
+              "lc-on-white": 111.2,
+              "lc-on-black": -2.0,
+              "approximate": true,
+              "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+            }
+          }
+        }
+      }
+    },
+    "semantic": {
+      "success": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.semantic.success.500}",
+          "$description": "Semantic success — default"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.semantic.success.100}",
+          "$description": "Semantic success — subtle background tint"
+        },
+        "emphasis": {
+          "$type": "color",
+          "$value": "{color.semantic.success.700}",
+          "$description": "Semantic success — emphasis/darker"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F2FCF3",
+          "$description": "LuisDS success green — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(126.0, 62.5%, 96.9%)",
+              "oklch": "oklch(0.981 0.016 148.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.05,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.99,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 3.2,
+                "lc-on-black": -110.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#DFF5E2",
+          "$description": "LuisDS success green — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(128.2, 52.4%, 91.8%)",
+              "oklch": "oklch(0.949 0.034 149.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.15,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 18.3,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 8.9,
+                "lc-on-black": -104.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#B4E6BD",
+          "$description": "LuisDS success green — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(130.8, 50.0%, 80.4%)",
+              "oklch": "oklch(0.879 0.076 150.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.4,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 14.99,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 20.7,
+                "lc-on-black": -91.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#79D28D",
+          "$description": "LuisDS success green — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(133.5, 49.7%, 64.9%)",
+              "oklch": "oklch(0.79 0.13 149.9)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.84,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 11.42,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 35.0,
+                "lc-on-black": -76.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#32B45B",
+          "$description": "LuisDS success green — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(138.9, 56.5%, 45.1%)",
+              "oklch": "oklch(0.68 0.169 149.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.69,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 7.82,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 52.0,
+                "lc-on-black": -58.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#22C55E",
+          "$description": "LuisDS success green — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(142.1, 70.6%, 45.3%)",
+              "oklch": "oklch(0.723 0.192 149.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.28,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 9.22,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 45.1,
+                "lc-on-black": -66.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#007109",
+          "$description": "LuisDS success green — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(124.8, 100.0%, 22.2%)",
+              "oklch": "oklch(0.476 0.159 143.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 6.24,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 3.37,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 80.3,
+                "lc-on-black": -30.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#005400",
+          "$description": "LuisDS success green — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(120.0, 100.0%, 16.5%)",
+              "oklch": "oklch(0.386 0.131 142.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 9.26,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.27,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 90.9,
+                "lc-on-black": -20.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#003B00",
+          "$description": "LuisDS success green — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(120.0, 100.0%, 11.6%)",
+              "oklch": "oklch(0.305 0.104 142.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 12.92,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.63,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 99.2,
+                "lc-on-black": -12.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#002300",
+          "$description": "LuisDS success green — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(120.0, 100.0%, 6.9%)",
+              "oklch": "oklch(0.222 0.076 142.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 16.93,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.24,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 106.4,
+                "lc-on-black": -6.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#001400",
+          "$description": "LuisDS success green — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(120.0, 100.0%, 3.9%)",
+              "oklch": "oklch(0.166 0.056 142.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.09,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.1,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.2,
+                "lc-on-black": -2.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      },
+      "warning": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.semantic.warning.500}",
+          "$description": "Semantic warning — default"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.semantic.warning.100}",
+          "$description": "Semantic warning — subtle background tint"
+        },
+        "emphasis": {
+          "$type": "color",
+          "$value": "{color.semantic.warning.700}",
+          "$description": "Semantic warning — emphasis/darker"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#FEF7EF",
+          "$description": "LuisDS warning amber — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(32.0, 88.2%, 96.7%)",
+              "oklch": "oklch(0.979 0.013 71.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.06,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.76,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 4.0,
+                "lc-on-black": -109.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#FCECDA",
+          "$description": "LuisDS warning amber — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(31.8, 85.0%, 92.2%)",
+              "oklch": "oklch(0.951 0.029 70.7)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.16,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 18.15,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 9.4,
+                "lc-on-black": -103.9,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#F4D1A9",
+          "$description": "LuisDS warning amber — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(32.0, 77.3%, 81.0%)",
+              "oklch": "oklch(0.881 0.066 70.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.44,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 14.54,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 22.4,
+                "lc-on-black": -89.9,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#E9AE67",
+          "$description": "LuisDS warning amber — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(32.8, 74.7%, 65.9%)",
+              "oklch": "oklch(0.791 0.112 70.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.96,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 10.72,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 38.1,
+                "lc-on-black": -73.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#D0860A",
+          "$description": "LuisDS warning amber — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(37.6, 90.8%, 42.7%)",
+              "oklch": "oklch(0.681 0.145 70.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.96,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 7.1,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 55.8,
+                "lc-on-black": -54.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#F59E0B",
+          "$description": "LuisDS warning amber — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(37.7, 92.1%, 50.2%)",
+              "oklch": "oklch(0.769 0.165 70.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.15,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 9.78,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 42.4,
+                "lc-on-black": -68.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#8C4100",
+          "$description": "LuisDS warning amber — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(27.9, 100.0%, 27.5%)",
+              "oklch": "oklch(0.465 0.121 51.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 7.31,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.87,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 85.0,
+                "lc-on-black": -25.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#6B2A00",
+          "$description": "LuisDS warning amber — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(23.6, 100.0%, 21.0%)",
+              "oklch": "oklch(0.373 0.104 46.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 10.73,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.96,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 94.8,
+                "lc-on-black": -16.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#4D1A00",
+          "$description": "LuisDS warning amber — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(20.3, 100.0%, 15.1%)",
+              "oklch": "oklch(0.294 0.085 44.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 14.35,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.46,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 101.9,
+                "lc-on-black": -9.9,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#2E0D00",
+          "$description": "LuisDS warning amber — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(17.0, 100.0%, 9.0%)",
+              "oklch": "oklch(0.212 0.06 45.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 17.89,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.17,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 108.0,
+                "lc-on-black": -4.6,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#1C0700",
+          "$description": "LuisDS warning amber — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(15.0, 100.0%, 5.5%)",
+              "oklch": "oklch(0.163 0.043 49.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.45,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.08,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.9,
+                "lc-on-black": -2.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      },
+      "error": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.semantic.error.500}",
+          "$description": "Semantic error — default"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.semantic.error.100}",
+          "$description": "Semantic error — subtle background tint"
+        },
+        "emphasis": {
+          "$type": "color",
+          "$value": "{color.semantic.error.700}",
+          "$description": "Semantic error — emphasis/darker"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#FFF4F3",
+          "$description": "LuisDS error red — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(5.0, 100.0%, 97.6%)",
+              "oklch": "oklch(0.975 0.012 23.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.08,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.49,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 4.9,
+                "lc-on-black": -108.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#FFE6E2",
+          "$description": "LuisDS error red — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(8.3, 100.0%, 94.3%)",
+              "oklch": "oklch(0.944 0.028 28.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.19,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 17.67,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 11.0,
+                "lc-on-black": -102.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#FFC3BC",
+          "$description": "LuisDS error red — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(6.3, 100.0%, 86.9%)",
+              "oklch": "oklch(0.869 0.07 26.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.52,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 13.78,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 25.3,
+                "lc-on-black": -86.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#FF948B",
+          "$description": "LuisDS error red — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(4.7, 100.0%, 77.3%)",
+              "oklch": "oklch(0.777 0.13 25.6)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.13,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 9.86,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 42.1,
+                "lc-on-black": -69.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#F4615B",
+          "$description": "LuisDS error red — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(2.4, 87.4%, 65.7%)",
+              "oklch": "oklch(0.68 0.182 25.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 3.13,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 6.71,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 58.4,
+                "lc-on-black": -52.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#EF4444",
+          "$description": "LuisDS error red — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(0.0, 84.2%, 60.2%)",
+              "oklch": "oklch(0.637 0.208 25.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 3.76,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 5.58,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 65.1,
+                "lc-on-black": -45.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#AB0010",
+          "$description": "LuisDS error red — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(354.4, 100.0%, 33.5%)",
+              "oklch": "oklch(0.466 0.19 27.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 7.67,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.74,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 85.5,
+                "lc-on-black": -25.2,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#850000",
+          "$description": "LuisDS error red — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(0.0, 100.0%, 26.1%)",
+              "oklch": "oklch(0.387 0.159 29.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 10.51,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.0,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 93.3,
+                "lc-on-black": -17.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#610000",
+          "$description": "LuisDS error red — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(0.0, 100.0%, 19.0%)",
+              "oklch": "oklch(0.309 0.127 29.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 13.92,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.51,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 100.1,
+                "lc-on-black": -11.6,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#3B0000",
+          "$description": "LuisDS error red — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(0.0, 100.0%, 11.6%)",
+              "oklch": "oklch(0.221 0.091 29.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 17.71,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.19,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 106.6,
+                "lc-on-black": -5.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#250000",
+          "$description": "LuisDS error red — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(0.0, 100.0%, 7.3%)",
+              "oklch": "oklch(0.166 0.068 29.2)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.47,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.08,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 109.9,
+                "lc-on-black": -3.1,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      },
+      "info": {
+        "default": {
+          "$type": "color",
+          "$value": "{color.semantic.info.500}",
+          "$description": "Semantic info — default"
+        },
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.semantic.info.100}",
+          "$description": "Semantic info — subtle background tint"
+        },
+        "emphasis": {
+          "$type": "color",
+          "$value": "{color.semantic.info.700}",
+          "$description": "Semantic info — emphasis/darker"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F3F9FF",
+          "$description": "LuisDS info blue — step 50",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(210.0, 100.0%, 97.6%)",
+              "oklch": "oklch(0.979 0.01 248.1)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.06,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 19.81,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 3.8,
+                "lc-on-black": -109.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#E2F0FF",
+          "$description": "LuisDS info blue — step 100",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(211.0, 100.0%, 94.3%)",
+              "oklch": "oklch(0.949 0.025 250.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.16,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 18.14,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 9.4,
+                "lc-on-black": -103.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#BBD9FF",
+          "$description": "LuisDS info blue — step 200",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(213.5, 100.0%, 86.7%)",
+              "oklch": "oklch(0.876 0.062 254.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.45,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 14.48,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 22.6,
+                "lc-on-black": -89.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#89BBFF",
+          "$description": "LuisDS info blue — step 300",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(214.6, 100.0%, 76.9%)",
+              "oklch": "oklch(0.783 0.111 256.3)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 1.98,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 10.62,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 38.5,
+                "lc-on-black": -72.8,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#5896FD",
+          "$description": "LuisDS info blue — step 400",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(217.5, 97.6%, 66.9%)",
+              "oklch": "oklch(0.68 0.166 260.0)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 2.92,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 7.2,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 55.4,
+                "lc-on-black": -55.3,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#3B82F6",
+          "$description": "LuisDS info blue — step 500 (anchor, exact hex preserved). Canonical L=0.56",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(217.2, 91.2%, 59.8%)",
+              "oklch": "oklch(0.623 0.188 259.8)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 3.68,
+                  "aa": false,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": false
+                },
+                "on-black": {
+                  "ratio": 5.71,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": false,
+                  "aaa-large": true
+                }
+              },
+              "apca": {
+                "lc-on-white": 64.0,
+                "lc-on-black": -46.5,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#0850B9",
+          "$description": "LuisDS info blue — step 600",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(215.6, 91.7%, 37.8%)",
+              "oklch": "oklch(0.461 0.178 259.8)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 7.35,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 2.86,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 85.1,
+                "lc-on-black": -25.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#003792",
+          "$description": "LuisDS info blue — step 700",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(217.4, 100.0%, 28.6%)",
+              "oklch": "oklch(0.372 0.159 260.8)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 10.71,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.96,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 94.6,
+                "lc-on-black": -16.6,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#00246B",
+          "$description": "LuisDS info blue — step 800",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(219.8, 100.0%, 21.0%)",
+              "oklch": "oklch(0.293 0.13 261.4)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 14.34,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.46,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 101.8,
+                "lc-on-black": -10.0,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#001342",
+          "$description": "LuisDS info blue — step 900",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(222.7, 100.0%, 12.9%)",
+              "oklch": "oklch(0.21 0.093 261.5)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 17.92,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.17,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 107.9,
+                "lc-on-black": -4.7,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#000B29",
+          "$description": "LuisDS info blue — step 950",
+          "$extensions": {
+            "formats": {
+              "hsl": "hsl(223.9, 100.0%, 8.0%)",
+              "oklch": "oklch(0.162 0.066 259.9)"
+            },
+            "a11y": {
+              "wcag": {
+                "on-white": {
+                  "ratio": 19.45,
+                  "aa": true,
+                  "aa-large": true,
+                  "aaa": true,
+                  "aaa-large": true
+                },
+                "on-black": {
+                  "ratio": 1.08,
+                  "aa": false,
+                  "aa-large": false,
+                  "aaa": false,
+                  "aaa-large": false
+                }
+              },
+              "apca": {
+                "lc-on-white": 110.8,
+                "lc-on-black": -2.4,
+                "approximate": true,
+                "note": "Negative Lc = light text on dark bg. Min body text: |Lc| >= 60. Min large text: |Lc| >= 45."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "typography": {
+    "font-family": {
+      "body": {
+        "$type": "fontFamily",
+        "$value": [
+          "Afacad",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Body font family"
+      },
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Afacad",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Display/heading font family"
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "ui-monospace",
+          "SFMono-Regular",
+          "monospace"
+        ],
+        "$description": "Monospace font family"
+      }
+    },
+    "font-size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "10.24px",
+        "$description": "Font size xs"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "12.8px",
+        "$description": "Font size sm"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Font size md"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "20.0px",
+        "$description": "Font size lg"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "25.0px",
+        "$description": "Font size xl"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "31.25px",
+        "$description": "Font size 2xl"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "39.06px",
+        "$description": "Font size 3xl"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "48.83px",
+        "$description": "Font size 4xl"
+      }
+    },
+    "font-weight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400,
+        "$description": "Regular weight"
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500,
+        "$description": "Medium weight"
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600,
+        "$description": "Semibold weight"
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700,
+        "$description": "Bold weight"
+      }
+    },
+    "line-height": {
+      "tight": {
+        "$type": "number",
+        "$value": 1.25,
+        "$description": "Tight line height"
+      },
+      "snug": {
+        "$type": "number",
+        "$value": 1.375,
+        "$description": "Snug line height"
+      },
+      "normal": {
+        "$type": "number",
+        "$value": 1.5,
+        "$description": "Normal line height"
+      },
+      "relaxed": {
+        "$type": "number",
+        "$value": 1.625,
+        "$description": "Relaxed line height"
+      },
+      "loose": {
+        "$type": "number",
+        "$value": 2.0,
+        "$description": "Loose line height"
+      }
+    },
+    "letter-spacing": {
+      "tighter": {
+        "$type": "dimension",
+        "$value": "-0.05em",
+        "$description": "Tighter letter spacing"
+      },
+      "tight": {
+        "$type": "dimension",
+        "$value": "-0.025em",
+        "$description": "Tight letter spacing"
+      },
+      "normal": {
+        "$type": "dimension",
+        "$value": "0em",
+        "$description": "Normal letter spacing"
+      },
+      "wide": {
+        "$type": "dimension",
+        "$value": "0.025em",
+        "$description": "Wide letter spacing"
+      },
+      "wider": {
+        "$type": "dimension",
+        "$value": "0.05em",
+        "$description": "Wider letter spacing"
+      },
+      "widest": {
+        "$type": "dimension",
+        "$value": "0.1em",
+        "$description": "Widest letter spacing"
+      }
+    },
+    "composite": {
+      "display-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.4xl}",
+          "fontWeight": 700,
+          "lineHeight": "{typography.line-height.tight}",
+          "letterSpacing": "{typography.letter-spacing.tight}"
+        },
+        "$description": "Display large"
+      },
+      "display-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.3xl}",
+          "fontWeight": 700,
+          "lineHeight": "{typography.line-height.tight}",
+          "letterSpacing": "{typography.letter-spacing.tight}"
+        },
+        "$description": "Display small"
+      },
+      "heading-xl": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.2xl}",
+          "fontWeight": 700,
+          "lineHeight": "{typography.line-height.snug}",
+          "letterSpacing": "{typography.letter-spacing.tight}"
+        },
+        "$description": "Heading XL"
+      },
+      "heading-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.xl}",
+          "fontWeight": 600,
+          "lineHeight": "{typography.line-height.snug}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Heading LG"
+      },
+      "heading-md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.lg}",
+          "fontWeight": 600,
+          "lineHeight": "{typography.line-height.snug}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Heading MD"
+      },
+      "heading-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.display}",
+          "fontSize": "{typography.font-size.md}",
+          "fontWeight": 600,
+          "lineHeight": "{typography.line-height.normal}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Heading SM"
+      },
+      "body-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.body}",
+          "fontSize": "{typography.font-size.lg}",
+          "fontWeight": 400,
+          "lineHeight": "{typography.line-height.relaxed}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Body LG"
+      },
+      "body-md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.body}",
+          "fontSize": "{typography.font-size.md}",
+          "fontWeight": 400,
+          "lineHeight": "{typography.line-height.normal}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Body MD"
+      },
+      "body-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.body}",
+          "fontSize": "{typography.font-size.sm}",
+          "fontWeight": 400,
+          "lineHeight": "{typography.line-height.normal}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Body SM"
+      },
+      "label-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.body}",
+          "fontSize": "{typography.font-size.sm}",
+          "fontWeight": 500,
+          "lineHeight": "{typography.line-height.normal}",
+          "letterSpacing": "{typography.letter-spacing.wide}"
+        },
+        "$description": "Label LG"
+      },
+      "label-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.body}",
+          "fontSize": "{typography.font-size.xs}",
+          "fontWeight": 500,
+          "lineHeight": "{typography.line-height.normal}",
+          "letterSpacing": "{typography.letter-spacing.wider}"
+        },
+        "$description": "Label SM"
+      },
+      "code": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{typography.font-family.mono}",
+          "fontSize": "{typography.font-size.sm}",
+          "fontWeight": 400,
+          "lineHeight": "{typography.line-height.relaxed}",
+          "letterSpacing": "{typography.letter-spacing.normal}"
+        },
+        "$description": "Code/monospace"
+      }
+    }
+  },
+  "spacing": {
+    "gap": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Gap spacing step 0 (0px)"
+      },
+      "px": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Gap spacing step px (1px)"
+      },
+      "0.5": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Gap spacing step 0.5 (2px)"
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Gap spacing step 1 (4px)"
+      },
+      "1.5": {
+        "$type": "dimension",
+        "$value": "6px",
+        "$description": "Gap spacing step 1.5 (6px)"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Gap spacing step 2 (8px)"
+      },
+      "2.5": {
+        "$type": "dimension",
+        "$value": "10px",
+        "$description": "Gap spacing step 2.5 (10px)"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Gap spacing step 3 (12px)"
+      },
+      "3.5": {
+        "$type": "dimension",
+        "$value": "14px",
+        "$description": "Gap spacing step 3.5 (14px)"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Gap spacing step 4 (16px)"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Gap spacing step 5 (20px)"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Gap spacing step 6 (24px)"
+      },
+      "7": {
+        "$type": "dimension",
+        "$value": "28px",
+        "$description": "Gap spacing step 7 (28px)"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Gap spacing step 8 (32px)"
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "36px",
+        "$description": "Gap spacing step 9 (36px)"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "Gap spacing step 10 (40px)"
+      },
+      "11": {
+        "$type": "dimension",
+        "$value": "44px",
+        "$description": "Gap spacing step 11 (44px)"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Gap spacing step 12 (48px)"
+      },
+      "14": {
+        "$type": "dimension",
+        "$value": "56px",
+        "$description": "Gap spacing step 14 (56px)"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Gap spacing step 16 (64px)"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$description": "Gap spacing step 20 (80px)"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "96px",
+        "$description": "Gap spacing step 24 (96px)"
+      },
+      "28": {
+        "$type": "dimension",
+        "$value": "112px",
+        "$description": "Gap spacing step 28 (112px)"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "128px",
+        "$description": "Gap spacing step 32 (128px)"
+      },
+      "36": {
+        "$type": "dimension",
+        "$value": "144px",
+        "$description": "Gap spacing step 36 (144px)"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$description": "Gap spacing step 40 (160px)"
+      },
+      "44": {
+        "$type": "dimension",
+        "$value": "176px",
+        "$description": "Gap spacing step 44 (176px)"
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "192px",
+        "$description": "Gap spacing step 48 (192px)"
+      },
+      "52": {
+        "$type": "dimension",
+        "$value": "208px",
+        "$description": "Gap spacing step 52 (208px)"
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "224px",
+        "$description": "Gap spacing step 56 (224px)"
+      },
+      "60": {
+        "$type": "dimension",
+        "$value": "240px",
+        "$description": "Gap spacing step 60 (240px)"
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "256px",
+        "$description": "Gap spacing step 64 (256px)"
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "288px",
+        "$description": "Gap spacing step 72 (288px)"
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "320px",
+        "$description": "Gap spacing step 80 (320px)"
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": "384px",
+        "$description": "Gap spacing step 96 (384px)"
+      }
+    },
+    "padding": {
+      "0": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.0}",
+        "$description": "Padding spacing step 0 — references gap.0"
+      },
+      "px": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.px}",
+        "$description": "Padding spacing step px — references gap.px"
+      },
+      "0.5": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.0.5}",
+        "$description": "Padding spacing step 0.5 — references gap.0.5"
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.1}",
+        "$description": "Padding spacing step 1 — references gap.1"
+      },
+      "1.5": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.1.5}",
+        "$description": "Padding spacing step 1.5 — references gap.1.5"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.2}",
+        "$description": "Padding spacing step 2 — references gap.2"
+      },
+      "2.5": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.2.5}",
+        "$description": "Padding spacing step 2.5 — references gap.2.5"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.3}",
+        "$description": "Padding spacing step 3 — references gap.3"
+      },
+      "3.5": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.3.5}",
+        "$description": "Padding spacing step 3.5 — references gap.3.5"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.4}",
+        "$description": "Padding spacing step 4 — references gap.4"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.5}",
+        "$description": "Padding spacing step 5 — references gap.5"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.6}",
+        "$description": "Padding spacing step 6 — references gap.6"
+      },
+      "7": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.7}",
+        "$description": "Padding spacing step 7 — references gap.7"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.8}",
+        "$description": "Padding spacing step 8 — references gap.8"
+      },
+      "9": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.9}",
+        "$description": "Padding spacing step 9 — references gap.9"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.10}",
+        "$description": "Padding spacing step 10 — references gap.10"
+      },
+      "11": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.11}",
+        "$description": "Padding spacing step 11 — references gap.11"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.12}",
+        "$description": "Padding spacing step 12 — references gap.12"
+      },
+      "14": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.14}",
+        "$description": "Padding spacing step 14 — references gap.14"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.16}",
+        "$description": "Padding spacing step 16 — references gap.16"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.20}",
+        "$description": "Padding spacing step 20 — references gap.20"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.24}",
+        "$description": "Padding spacing step 24 — references gap.24"
+      },
+      "28": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.28}",
+        "$description": "Padding spacing step 28 — references gap.28"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.32}",
+        "$description": "Padding spacing step 32 — references gap.32"
+      },
+      "36": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.36}",
+        "$description": "Padding spacing step 36 — references gap.36"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.40}",
+        "$description": "Padding spacing step 40 — references gap.40"
+      },
+      "44": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.44}",
+        "$description": "Padding spacing step 44 — references gap.44"
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.48}",
+        "$description": "Padding spacing step 48 — references gap.48"
+      },
+      "52": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.52}",
+        "$description": "Padding spacing step 52 — references gap.52"
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.56}",
+        "$description": "Padding spacing step 56 — references gap.56"
+      },
+      "60": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.60}",
+        "$description": "Padding spacing step 60 — references gap.60"
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.64}",
+        "$description": "Padding spacing step 64 — references gap.64"
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.72}",
+        "$description": "Padding spacing step 72 — references gap.72"
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.80}",
+        "$description": "Padding spacing step 80 — references gap.80"
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.96}",
+        "$description": "Padding spacing step 96 — references gap.96"
+      }
+    }
+  },
+  "aspect-ratio": {
+    "square": {
+      "$type": "number",
+      "$value": 1.0,
+      "$description": "1:1 square"
+    },
+    "video": {
+      "$type": "number",
+      "$value": 1.7778,
+      "$description": "16:9 video"
+    },
+    "portrait": {
+      "$type": "number",
+      "$value": 0.75,
+      "$description": "3:4 portrait"
+    },
+    "landscape": {
+      "$type": "number",
+      "$value": 1.3333,
+      "$description": "4:3 landscape"
+    },
+    "wide": {
+      "$type": "number",
+      "$value": 2.3333,
+      "$description": "21:9 ultrawide"
+    },
+    "golden": {
+      "$type": "number",
+      "$value": 1.618,
+      "$description": "Golden ratio 1.618:1"
+    }
+  },
+  "elevation": {
+    "none": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0,0,0,0)",
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px"
+      },
+      "$description": "No elevation"
+    },
+    "xs": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(16,24,40,0.05)",
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px"
+      },
+      "$description": "Extra-small elevation — subtle lift"
+    },
+    "sm": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16,24,40,0.1)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "3px",
+          "spread": "0px"
+        },
+        {
+          "color": "rgba(16,24,40,0.06)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "0px"
+        }
+      ],
+      "$description": "Small elevation — card"
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16,24,40,0.1)",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "6px",
+          "spread": "-2px"
+        },
+        {
+          "color": "rgba(16,24,40,0.06)",
+          "offsetX": "0px",
+          "offsetY": "2px",
+          "blur": "4px",
+          "spread": "-1px"
+        }
+      ],
+      "$description": "Medium elevation — popover"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16,24,40,0.1)",
+          "offsetX": "0px",
+          "offsetY": "10px",
+          "blur": "15px",
+          "spread": "-3px"
+        },
+        {
+          "color": "rgba(16,24,40,0.05)",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "6px",
+          "spread": "-2px"
+        }
+      ],
+      "$description": "Large elevation — overlay"
+    },
+    "xl": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "rgba(16,24,40,0.1)",
+          "offsetX": "0px",
+          "offsetY": "20px",
+          "blur": "25px",
+          "spread": "-5px"
+        },
+        {
+          "color": "rgba(16,24,40,0.04)",
+          "offsetX": "0px",
+          "offsetY": "10px",
+          "blur": "10px",
+          "spread": "-5px"
+        }
+      ],
+      "$description": "XL elevation — drawer/sheet"
+    },
+    "2xl": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(16,24,40,0.25)",
+        "offsetX": "0px",
+        "offsetY": "25px",
+        "blur": "50px",
+        "spread": "-12px"
+      },
+      "$description": "Maximum elevation — modal"
+    }
+  },
+  "border": {
+    "radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "No radius"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Small radius"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Medium radius (base)"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Large radius"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "XL radius"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "2XL radius"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "3XL radius"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$description": "Full/pill radius"
+      }
+    },
+    "width": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "No border"
+      },
+      "thin": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Thin border"
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Medium border"
+      },
+      "thick": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Thick border"
+      }
+    }
+  },
+  "grid": {
+    "breakpoint": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "375px",
+        "$description": "Breakpoint xs"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "640px",
+        "$description": "Breakpoint sm"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "768px",
+        "$description": "Breakpoint md"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1024px",
+        "$description": "Breakpoint lg"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "1280px",
+        "$description": "Breakpoint xl"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "1536px",
+        "$description": "Breakpoint 2xl"
+      }
+    },
+    "columns": {
+      "xs": {
+        "$type": "number",
+        "$value": 4,
+        "$description": "Grid columns at xs"
+      },
+      "sm": {
+        "$type": "number",
+        "$value": 4,
+        "$description": "Grid columns at sm"
+      },
+      "md": {
+        "$type": "number",
+        "$value": 8,
+        "$description": "Grid columns at md"
+      },
+      "lg": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "Grid columns at lg"
+      },
+      "xl": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "Grid columns at xl"
+      },
+      "2xl": {
+        "$type": "number",
+        "$value": 12,
+        "$description": "Grid columns at 2xl"
+      }
+    },
+    "gutter": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.4}",
+        "$description": "Grid gutter at xs"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.4}",
+        "$description": "Grid gutter at sm"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.6}",
+        "$description": "Grid gutter at md"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.8}",
+        "$description": "Grid gutter at lg"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.8}",
+        "$description": "Grid gutter at xl"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{spacing.gap.8}",
+        "$description": "Grid gutter at 2xl"
+      }
+    },
+    "margin": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.4}",
+        "$description": "Grid margin at xs"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.6}",
+        "$description": "Grid margin at sm"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.8}",
+        "$description": "Grid margin at md"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.16}",
+        "$description": "Grid margin at lg"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.20}",
+        "$description": "Grid margin at xl"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{spacing.padding.24}",
+        "$description": "Grid margin at 2xl"
+      }
+    },
+    "container": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "640px",
+        "$description": "Container max-width at sm"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "768px",
+        "$description": "Container max-width at md"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1024px",
+        "$description": "Container max-width at lg"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "1280px",
+        "$description": "Container max-width at xl"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "1536px",
+        "$description": "Container max-width at 2xl"
+      },
+      "fluid": {
+        "$type": "dimension",
+        "$value": "100%",
+        "$description": "Container max-width at fluid"
+      }
+    }
+  },
+  "focus": {
+    "ring-width": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Focus ring width — WCAG 2.2 §2.4.11"
+    },
+    "ring-offset": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "Focus ring offset gap"
+    },
+    "ring-color": {
+      "$type": "color",
+      "$value": "{color.brand.primary.500}",
+      "$description": "Focus ring color — references brand primary"
+    },
+    "ring-color-invert": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "Focus ring color on dark backgrounds"
+    },
+    "ring-opacity": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Focus ring opacity"
+    },
+    "ring-style": {
+      "$type": "string",
+      "$value": "solid",
+      "$description": "Focus ring outline style"
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$value": "0ms",
+        "$description": "Instant — no animation"
+      },
+      "fast": {
+        "$type": "duration",
+        "$value": "120ms",
+        "$description": "Fast — subtle style"
+      },
+      "normal": {
+        "$type": "duration",
+        "$value": "250ms",
+        "$description": "Normal — subtle style"
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "350ms",
+        "$description": "Slow — subtle style"
+      },
+      "deliberate": {
+        "$type": "duration",
+        "$value": "600ms",
+        "$description": "Deliberate — subtle style"
+      },
+      "lazy": {
+        "$type": "duration",
+        "$value": "900ms",
+        "$description": "Lazy — subtle style"
+      }
+    },
+    "easing": {
+      "linear": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "$description": "Linear — no easing"
+      },
+      "ease-in": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.4,
+          0,
+          1,
+          1
+        ],
+        "$description": "Ease in — accelerate"
+      },
+      "ease-out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          0.2,
+          1
+        ],
+        "$description": "Ease out — decelerate"
+      },
+      "ease-in-out": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.4,
+          0,
+          0.2,
+          1
+        ],
+        "$description": "Ease in-out — standard"
+      },
+      "spring": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.175,
+          0.885,
+          0.32,
+          1.275
+        ],
+        "$description": "Spring — slight overshoot"
+      },
+      "decelerate": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "$description": "Decelerate — Material Design"
+      }
+    },
+    "transition": {
+      "fade": {
+        "$type": "string",
+        "$value": "opacity 250ms ease-in-out",
+        "$description": "Fade transition composite — subtle style"
+      },
+      "slide": {
+        "$type": "string",
+        "$value": "transform 250ms cubic-bezier(0,0,0.2,1)",
+        "$description": "Slide transition composite"
+      },
+      "expand": {
+        "$type": "string",
+        "$value": "all 350ms cubic-bezier(0.175,0.885,0.32,1.275)",
+        "$description": "Expand/spring transition composite"
+      },
+      "instant": {
+        "$type": "string",
+        "$value": "all 0ms linear",
+        "$description": "Instant transition — no animation"
+      }
+    }
+  },
+  "shader": {
+    "opacity": {
+      "0": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "Opacity 0%"
+      },
+      "5": {
+        "$type": "number",
+        "$value": 0.05,
+        "$description": "Opacity 5%"
+      },
+      "10": {
+        "$type": "number",
+        "$value": 0.1,
+        "$description": "Opacity 10%"
+      },
+      "20": {
+        "$type": "number",
+        "$value": 0.2,
+        "$description": "Opacity 20%"
+      },
+      "25": {
+        "$type": "number",
+        "$value": 0.25,
+        "$description": "Opacity 25%"
+      },
+      "30": {
+        "$type": "number",
+        "$value": 0.3,
+        "$description": "Opacity 30%"
+      },
+      "40": {
+        "$type": "number",
+        "$value": 0.4,
+        "$description": "Opacity 40%"
+      },
+      "50": {
+        "$type": "number",
+        "$value": 0.5,
+        "$description": "Opacity 50%"
+      },
+      "60": {
+        "$type": "number",
+        "$value": 0.6,
+        "$description": "Opacity 60%"
+      },
+      "70": {
+        "$type": "number",
+        "$value": 0.7,
+        "$description": "Opacity 70%"
+      },
+      "75": {
+        "$type": "number",
+        "$value": 0.75,
+        "$description": "Opacity 75%"
+      },
+      "80": {
+        "$type": "number",
+        "$value": 0.8,
+        "$description": "Opacity 80%"
+      },
+      "90": {
+        "$type": "number",
+        "$value": 0.9,
+        "$description": "Opacity 90%"
+      },
+      "95": {
+        "$type": "number",
+        "$value": 0.95,
+        "$description": "Opacity 95%"
+      },
+      "100": {
+        "$type": "number",
+        "$value": 1,
+        "$description": "Opacity 100%"
+      }
+    },
+    "blur": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "No blur"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Small blur"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Medium blur"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Large blur"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "XL blur"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "2XL blur"
+      }
+    },
+    "overlay": {
+      "light": {
+        "$type": "color",
+        "$value": "rgba(255, 255, 255, 0.8)",
+        "$description": "Light scrim"
+      },
+      "dark": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$description": "Dark overlay/modal backdrop"
+      },
+      "dark-subtle": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.2)",
+        "$description": "Soft dark overlay"
+      }
+    },
+    "liquid-glass": {
+      "default": {
+        "blur": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$description": "Liquid Glass default — backdrop blur radius"
+        },
+        "saturation": {
+          "$type": "number",
+          "$value": 1.8,
+          "$description": "Liquid Glass default — saturate() multiplier"
+        },
+        "brightness-light": {
+          "$type": "number",
+          "$value": 1.1,
+          "$description": "Liquid Glass default — brightness() for light mode"
+        },
+        "brightness-dark": {
+          "$type": "number",
+          "$value": 0.85,
+          "$description": "Liquid Glass default — brightness() for dark mode"
+        },
+        "tint-light": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.55)",
+          "$description": "Liquid Glass default — tint overlay (light mode)"
+        },
+        "tint-dark": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.12)",
+          "$description": "Liquid Glass default — tint overlay (dark mode)"
+        },
+        "specular": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.6)",
+          "$description": "Liquid Glass default — specular border highlight"
+        },
+        "specular-width": {
+          "$type": "dimension",
+          "$value": "1px",
+          "$description": "Liquid Glass default — specular border width"
+        },
+        "inner-shadow": {
+          "$type": "shadow",
+          "$value": {
+            "color": "rgba(255,255,255,0.25)",
+            "offsetX": "0px",
+            "offsetY": "1px",
+            "blur": "0px",
+            "spread": "0px",
+            "inset": true
+          },
+          "$description": "Liquid Glass default — inner top highlight"
+        },
+        "backdrop": {
+          "$type": "string",
+          "$value": "blur(20px) saturate(180%) brightness(110%)",
+          "$description": "Liquid Glass default — CSS backdrop-filter shorthand (light mode)"
+        }
+      },
+      "thick": {
+        "blur": {
+          "$type": "dimension",
+          "$value": "32px",
+          "$description": "Liquid Glass thick — backdrop blur radius"
+        },
+        "saturation": {
+          "$type": "number",
+          "$value": 2.0,
+          "$description": "Liquid Glass thick — saturate() multiplier"
+        },
+        "brightness-light": {
+          "$type": "number",
+          "$value": 1.12,
+          "$description": "Liquid Glass thick — brightness() for light mode"
+        },
+        "brightness-dark": {
+          "$type": "number",
+          "$value": 0.82,
+          "$description": "Liquid Glass thick — brightness() for dark mode"
+        },
+        "tint-light": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.72)",
+          "$description": "Liquid Glass thick — tint overlay (light mode)"
+        },
+        "tint-dark": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.18)",
+          "$description": "Liquid Glass thick — tint overlay (dark mode)"
+        },
+        "specular": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.75)",
+          "$description": "Liquid Glass thick — specular border highlight"
+        },
+        "specular-width": {
+          "$type": "dimension",
+          "$value": "1px",
+          "$description": "Liquid Glass thick — specular border width"
+        },
+        "inner-shadow": {
+          "$type": "shadow",
+          "$value": {
+            "color": "rgba(255,255,255,0.25)",
+            "offsetX": "0px",
+            "offsetY": "1px",
+            "blur": "0px",
+            "spread": "0px",
+            "inset": true
+          },
+          "$description": "Liquid Glass thick — inner top highlight"
+        },
+        "backdrop": {
+          "$type": "string",
+          "$value": "blur(32px) saturate(200%) brightness(112%)",
+          "$description": "Liquid Glass thick — CSS backdrop-filter shorthand (light mode)"
+        }
+      },
+      "ultra-thin": {
+        "blur": {
+          "$type": "dimension",
+          "$value": "12px",
+          "$description": "Liquid Glass ultra-thin — backdrop blur radius"
+        },
+        "saturation": {
+          "$type": "number",
+          "$value": 1.4,
+          "$description": "Liquid Glass ultra-thin — saturate() multiplier"
+        },
+        "brightness-light": {
+          "$type": "number",
+          "$value": 1.08,
+          "$description": "Liquid Glass ultra-thin — brightness() for light mode"
+        },
+        "brightness-dark": {
+          "$type": "number",
+          "$value": 0.9,
+          "$description": "Liquid Glass ultra-thin — brightness() for dark mode"
+        },
+        "tint-light": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.30)",
+          "$description": "Liquid Glass ultra-thin — tint overlay (light mode)"
+        },
+        "tint-dark": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.06)",
+          "$description": "Liquid Glass ultra-thin — tint overlay (dark mode)"
+        },
+        "specular": {
+          "$type": "color",
+          "$value": "rgba(255,255,255,0.35)",
+          "$description": "Liquid Glass ultra-thin — specular border highlight"
+        },
+        "specular-width": {
+          "$type": "dimension",
+          "$value": "1px",
+          "$description": "Liquid Glass ultra-thin — specular border width"
+        },
+        "inner-shadow": {
+          "$type": "shadow",
+          "$value": {
+            "color": "rgba(255,255,255,0.25)",
+            "offsetX": "0px",
+            "offsetY": "1px",
+            "blur": "0px",
+            "spread": "0px",
+            "inset": true
+          },
+          "$description": "Liquid Glass ultra-thin — inner top highlight"
+        },
+        "backdrop": {
+          "$type": "string",
+          "$value": "blur(12px) saturate(140%) brightness(108%)",
+          "$description": "Liquid Glass ultra-thin — CSS backdrop-filter shorthand (light mode)"
+        }
+      }
+    }
+  }
+}

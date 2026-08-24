@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3FK4FCKMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3FK4FCKMQ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal del Investigador — Case study de Luis Pascual, Sr Product Designer">
+    <title>Portal del Investigador — Luis Pascual</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Anti-FOUC: aplica el tema antes de renderizar -->
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"/>
+            <line x1="12" y1="2"     x2="12" y2="4"/>
+            <line x1="12" y1="20"    x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="2"  y1="12"    x2="4"  y2="12"/>
+            <line x1="20" y1="12"    x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <canvas id="dot-grid" aria-hidden="true"></canvas>
+    <main id="main-content">
+        <a href="../index.html" class="back-link">← Volver</a>
+
+        <section class="detail-hero">
+            <h1>Portal del Investigador</h1>
+            <img src="img/investigador/S_SigmaCover.jpg" alt="Portada del proyecto Portal del Investigador">
+
+            <div class="phaseinvestigador" role="region" aria-label="Ficha del proyecto">
+                <p><span class="phase-tools">Descripción:</span> Rediseño de la plataforma de gestión financiera y de contenidos para investigadores universitarios.</p>
+                <p><span class="phase-tools">Fecha:</span> Dic 2022 - Abr 2023.</p>
+                <p><span class="phase-tools">Rol:</span> Senior UX/UI Designer (Team of one).</p>
+                <p><span class="phase-tools">Plataforma:</span> Web responsive (escritorio, tablet, móvil).</p>
+                <p><span class="phase-tools">Metodología:</span> Agile & Design Thinking.</p>
+                <p><span class="phase-tools">Herramientas:</span> Figma y Miro.</p>
+            </div>
+        </section>
+        <section class="detail-section">
+            <h2>Contexto</h2>
+            <p>A finales de 2022, una organización universitaria nos encargó rediseñar su Portal del Investigador — un hub central donde los académicos registran y gestionan publicaciones, fondos, patentes, congresos y su financiación.</p>
+            <p>El portal también servía como espacio de colaboración, pero con los años su estética había quedado obsoleta y la usabilidad había decaído.</p>
+            <br>
+            <img src="img/investigador/form_old.jpg" alt="Captura de la antigua página de registro de proyectos">
+            <p class="phase-tools">Antigua página de registro de proyectos</p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>El problema</h2>
+            <p>El portal heredado sufría de mala usabilidad, interfaz anticuada, baja responsividad y falta de soporte multiidioma y de accesibilidad.</p>
+            <p>Los usuarios — investigadores y personal administrativo — se enfrentaban a menús abrumadores, formularios extensos (¡más de 50 campos!) y flujos de trabajo ineficientes, lo que provocó una caída en el uso.</p>
+            <blockquote class="highlight-quote">"Nuestro objetivo era crear un portal más intuitivo y eficiente, que permitiera a los investigadores encontrar la información de forma más rápida y sencilla."</blockquote>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Propuesta de solución</h2>
+            <p>Nuestra consultora diseñó una renovación de la UI centrada en UX y creatividad, alineada con las necesidades del cliente y con metodología Agile + Design Thinking. Mantuvimos una colaboración estrecha tanto con negocio como con los usuarios, entregando validaciones por fases para minimizar el retrabajo en desarrollo.</p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>El equipo</h2>
+            <p>Un equipo multidisciplinar — de nuestra consultora y del cliente — colaboró estrechamente durante todo el proyecto.</p>
+            <br>
+            <img src="img/investigador/team.jpg" alt="Estructura del equipo: equipo consultor con manager, product owner, diseñador UX-UI y front-end; comité de seguimiento del cliente con tres personas">
+        </section>
+
+        <hr>
+
+        <section class="detail-section">
+            <h2>Proceso</h2>
+            <p>Utilizamos un enfoque de "Discovery Design" — nuestra fusión interna de Design Thinking y Agile, estructurado en cuatro fases: Empatizar, Idear, Diseñar, Entregar.</p>
+            <br>
+            <img src="img/investigador/process.jpg" alt="Diagrama del proceso">
+
+            <h3>1. Empatizar</h3>
+            <p>Realizamos sesiones con stakeholders y usuarios para comprender el portal, sus restricciones técnicas, las necesidades de los usuarios y el contexto de uso.</p>
+            <p>Los principales retos incluían:</p>
+            <ul class="process-list">
+                <li>Interfaz anticuada y layout no responsive.</li>
+                <li>Arquitectura de información compleja: hasta 60+ elementos de menú entre niveles superiores y subniveles.</li>
+                <li>Formularios pesados con más de 50 campos.</li>
+                <li>Falta de soporte multiidioma.</li>
+                <li>Accesibilidad por debajo del estándar AA.</li>
+            </ul>
+
+            <h3>2. Idear</h3>
+            <p>Ideamos con el cliente y los usuarios, priorizando ideas y bocetando la nueva arquitectura de información, la estructura de navegación y las plantillas principales del portal.</p>
+            <p>Principios de diseño principales:</p>
+            <ul class="process-list">
+                <li>Navegación simplificada (superior + lateral).</li>
+                <li>Dashboards personalizados para acceso rápido a tareas.</li>
+                <li>Diseño responsive con tono consistente y accesibilidad.</li>
+            </ul>
+
+            <h3>3. Diseñar</h3>
+            <p>Los wireframes validados llevaron a diseños de alta fidelidad basados en el branding del cliente y accesibilidad nivel AA. Construimos un UI Kit completo que incluía colores, tipografías, grids, espaciado, sombras, botones, formularios, tablas, modales y sistemas de notificaciones.</p>
+            <p>Diseñamos plantillas para escritorio, tablet y móvil para pantallas de consulta, vistas de detalle, formularios (frecuentemente en modales), notificaciones, registros horarios y el dashboard responsive.</p>
+
+            <h3>4. Entregar</h3>
+            <p>El testing fue iterativo, utilizando prototipos de Figma para validar la claridad de navegación, la usabilidad y minimizar correcciones en fase de desarrollo.</p>
+            <p>El nuevo dashboard reemplazó la pantalla en blanco por defecto, mostrando métricas clave y tareas mediante tarjetas y pestañas, reduciendo la carga cognitiva y mejorando el enfoque del usuario. Funcionaba de forma fluida en todos los dispositivos.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section results">
+            <h2>Resultados</h2>
+            <p>El nuevo portal se lanzó con éxito y recibió un feedback excelente de los usuarios:</p>
+            <ul class="process-list">
+                <li><span class="phase-tools">28% </span>de aumento en publicaciones enviadas.</li>
+                <li><span class="phase-tools">WCAG AA </span>cumplimiento de accesibilidad.</li>
+                <li><span class="phase-tools">43% </span>de reducción en tickets de soporte.</li>
+                <li><span class="phase-tools">Mayor engagement </span>y visitas recurrentes.</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Aprendizajes clave</h2>
+            <ul class="process-list">
+                <li>Diseñar para la complejidad requiere simplicidad: incluso las herramientas más técnicas pueden ser usables si nos centramos en claridad, jerarquía y revelación progresiva.</li>
+                <li>La co-creación acelera la adopción: la colaboración temprana con stakeholders y usuarios ayudó a asegurar que el producto cubría necesidades reales y generaba sentido de propiedad desde el primer día.</li>
+                <li>La accesibilidad debe ser intencional: alcanzar los estándares WCAG AA requirió atención al contraste de color, la navegación por teclado y la estructura semántica desde el inicio.</li>
+                <li>Los pequeños cambios tienen gran impacto: introducir un dashboard y reorganizar los menús mejoró significativamente el engagement y la orientación — sin cambiar la lógica del backend.</li>
+                <li>El diseño nunca está terminado: el prototipado y los ciclos de feedback continuo nos ayudaron a detectar problemas de usabilidad a tiempo, pero también mostraron que las necesidades de los usuarios evolucionan con el tiempo.</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Conclusión</h2>
+            <p>En resumen, el rediseño del Portal del Investigador mejoró la usabilidad, la accesibilidad y la adopción — reforzando su posición como herramienta clave para los equipos académicos.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section gallery">
+            <h2>Galería de diseño</h2>
+            <div class="gallery-grid">
+                <img src="img/investigador/Dashboardcontent.jpg" alt="Tablero de contenido del dashboard">
+                  <p class="phase-tools">Tablero de contenido del dashboard</p>
+                  <br>
+
+                <img src="img/investigador/Dashboardwireframe.jpg" alt="Wireframe del dashboard">
+                <p class="phase-tools">Wireframe del dashboard</p>
+                <br>
+
+                <img src="img/investigador/Dashboard.jpg" alt="Mockup del dashboard en versión escritorio">
+                <p class="phase-tools">Dashboard (versión escritorio)</p>
+                <br>
+
+                <img src="img/investigador/Dashboardmobile.jpg" alt="Mockup del dashboard en versión móvil">
+                <p class="phase-tools">Dashboard (versión móvil)</p>
+                <br>
+
+                <img src="img/investigador/Actividadcientifica.jpg" alt="Mockup del listado de actividad científica">
+                <p class="phase-tools">Listado de actividad científica (publicaciones)</p>
+                <br>
+
+                <img src="img/investigador/Detail.jpg" alt="Mockup de la página de detalle de una publicación">
+                <p class="phase-tools">Página de detalle de una publicación registrada</p>
+                <br>
+
+                <img src="img/investigador/Notification.jpg" alt="Mockup de la página de notificaciones">
+                <p class="phase-tools">Página de notificaciones</p>
+                <br>
+                <img src="img/investigador/Register.jpg" alt="Mockup del formulario modal para registrar una publicación científica">
+                <p class="phase-tools">Formulario modal para registrar una publicación científica (artículo)</p>
+                <br>
+
+                <img src="img/investigador/Schedule.jpg" alt="Mockup de la página de registro horario">
+                <p class="phase-tools">Página de registro horario</p>
+                <br>
+
+                <img src="img/investigador/Persona.jpg" alt="Ficha de persona investigador">
+                <p class="phase-tools">Personas (Investigador y Secretaria)</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p class="copyright">
+                <span>© 2026 Luis Pascual</span>
+                <span>Madrid (España)</span>
+            </p>
+        </footer>
+    </main>
+    <script src="../js/dot-grid.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+</html>

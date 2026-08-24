@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B3FK4FCKMQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3FK4FCKMQ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dua Dupla DS — Case study de Luis Pascual. Un Design System con IA, sin ceder el criterio humano.">
+    <title>Dua Dupla DS — Luis Pascual</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Anti-FOUC: aplica el tema antes de renderizar -->
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo oscuro">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5"/>
+            <line x1="12" y1="2"     x2="12" y2="4"/>
+            <line x1="12" y1="20"    x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="2"  y1="12"    x2="4"  y2="12"/>
+            <line x1="20" y1="12"    x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+    </button>
+
+    <canvas id="dot-grid" aria-hidden="true"></canvas>
+    <main id="main-content">
+        <a href="../index.html" class="back-link">← Volver</a>
+
+        <section class="detail-hero">
+            <h1>Dua Dupla DS</h1>
+            <img src="img/duadupla/cover.jpg" alt="Pipeline de Dua Dupla: humano, Cursor, Figma, Storybook, CodePen y publicación">
+
+            <div class="phase" role="region" aria-label="Ficha del proyecto">
+                <p><span class="phase-tools">Descripción:</span> Design System con un proceso de creación y documentación potenciado por IA, sin ceder el criterio humano.</p>
+                <p><span class="phase-tools">Fecha:</span> Nov 2025 – Ago 2026.</p>
+                <p><span class="phase-tools">Rol:</span> Product Designer &amp; DesignOps. Ideé el sistema, escribí las rules y skills, diseñé Foundations y componentes en Figma, y monté la documentación en Storybook hasta producción.</p>
+                <p><span class="phase-tools">Plataforma:</span> Figma · Storybook (web) · asistente Gemini Notebook.</p>
+                <p><span class="phase-tools">Metodología:</span> DesignOps. Disciplina externalizada: tres frases, dos puertas humanas.</p>
+                <p><span class="phase-tools">Herramientas:</span> Figma MCP, Cursor, Storybook, CodePen, GitHub, Vercel, Gemini Notebook.</p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>El problema</h2>
+            <p>Un Design System no es un botón bonito. Son tokens en un solo sitio, componentes con variantes, documentación con anatomía, estados y accesibilidad, y un camino hasta producción.</p>
+            <p>Cuando trabajas con un asistente de código, el riesgo no es que no sepa CSS. El riesgo es que mezcle fases: dibuje en Figma, implemente en Storybook y suba a GitHub en el mismo suspiro, sin que hayas mirado nada.</p>
+            <p>Eso me pasó — o casi — las suficientes veces como para convertirlo en regla. Al mismo tiempo, el canal del equipo se llena de las mismas preguntas: «¿cuándo uso un Alert?», «¿cuál es el hex del Error?», «¿puedo poner dos button primary juntos?».</p>
+            <blockquote class="highlight-quote">"No quiero un agente que lo haga todo solo. Quiero disciplina externalizada."</blockquote>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Propuesta de solución</h2>
+            <p>La tesis es simple: la IA ejecuta; el humano decide. En Dua Dupla el flujo solo avanza con tres frases. Entre medias hay dos puertas humanas que no se saltan.</p>
+            <img src="img/duadupla/pipeline.jpg" alt="De Figma a Storybook a producción en tres pasos">
+            <p class="phase-tools">Tres frases. El modelo no termina el trabajo hasta que escribo la siguiente.</p>
+
+            <div class="step-card">
+                <h3>1. «Vamos con componente X»</h3>
+                <p>Cursor + MCP de Figma diseña el component set y las specs en el archivo Components. No hace Storybook, ni commit, ni push.</p>
+            </div>
+            <div class="step-card">
+                <h3>2. «Documentar en Storybook»</h3>
+                <p>Storybook local: Docs, Playground, tokens, a11y. CodePen se abre solo para validar el código generado frente a Figma. Tampoco hay push.</p>
+            </div>
+            <div class="step-card">
+                <h3>3. «Push»</h3>
+                <p>Commit a GitHub + redeploy en Vercel. La documentación queda publicada para el equipo. Informe de coste del pipeline, si aplica.</p>
+            </div>
+
+            <h3>Dos puertas humanas</h3>
+            <ul class="process-list">
+                <li>Validación de Figma — variantes, tokens enlazados, specs. Si falta un token, se decide en Foundations; no se hardcodea un hex en el componente.</li>
+                <li>Validación visual — CodePen / Storybook vs Figma. Mismos tamaños, estados y variantes. Si no coincide, se corrige antes de seguir.</li>
+            </ul>
+            <p>Las variables viven solo en el archivo Foundations. Components las consume; no las crea. Eso también está en código: CSS con tokens <code>--ds-*</code> mapeados al diccionario, no magia por componente.</p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>El vídeo</h2>
+            <p>Flujo completo creando el componente Alert: de la frase en Cursor al set en Figma, la documentación en Storybook, CodePen y el push a producción.</p>
+            <video class="case-video" controls preload="metadata" playsinline poster="img/duadupla/cover.jpg">
+                <source src="img/duadupla/proceso-alert.mp4" type="video/mp4">
+                <track kind="captions" src="img/duadupla/proceso-alert.vtt" srclang="es" label="Español" default>
+            </video>
+            <p class="phase-tools">Creación del componente Alert · ~4 min</p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Proceso</h2>
+            <p>Por debajo de las tres frases hay nueve fases. Las automáticas las ejecuta Cursor. Las humanas no se fusionan salvo que yo lo pida.</p>
+
+            <h3>1. Orden</h3>
+            <p>Yo nombro el componente. Sin nombre, el pipeline no arranca.</p>
+
+            <h3>2. Figma (auto)</h3>
+            <p>Component set + Specs/Anatomy en el archivo Components. Variables importadas desde Foundations. Spec actualizada en el repo.</p>
+
+            <h3>3. Validación Figma (humano)</h3>
+            <p>Reviso variantes, tokens y naming. Si hay que cambiar un color o una variante, se corrige aquí. No se pasa a Storybook.</p>
+
+            <h3>4–5. Orden + Storybook (auto)</h3>
+            <p>Docs + Playground, canvas blanco, stacked si el componente no cabe en ~320px, build en verde. Node-id de Figma vivos, no enlaces muertos.</p>
+
+            <h3>6. CodePen + validación visual (humano)</h3>
+            <p>Comparo el código generado con Figma. Solo entonces digo Push.</p>
+
+            <h3>7–9. Push, GitHub/Vercel, coste (auto)</h3>
+            <p>Commit, producción Ready, smoke de las stories críticas. Si hay spec nueva, el repo exporta markdown para el asistente.</p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>El asistente del DS</h2>
+            <p>Cuando hay componente o spec nuevo, el repo exporta un <code>.md</code>. Yo lo subo a Gemini Notebook — a mano. No hay API oficial; no fingimos magia ahí.</p>
+            <p>El equipo pregunta en el notebook en vez de saturar Slack. Las respuestas van ancladas al corpus y cierran con enlace a Storybook + Figma.</p>
+            <ul class="process-list">
+                <li>«¿Cuándo uso un Alert?»</li>
+                <li>«¿Cuál es el hex del Error?»</li>
+                <li>«¿Puedo poner dos button primary juntos?»</li>
+            </ul>
+            <p>No es un chatbot que improvisa. Es el corpus del sistema, consultable.</p>
+            <p class="project-links">
+                <a href="https://dua-dupla-storybook.vercel.app" target="_blank" rel="noopener noreferrer">Storybook ↗</a>
+                <a href="https://dua-dupla-storybook.vercel.app/asistente/" target="_blank" rel="noopener noreferrer">Asistente ↗</a>
+            </p>
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>Qué es (y qué no es) un agente</h2>
+            <p>Cuando digo agentes, me refiero a roles documentados que el asistente asume al leer un skill o un command — no a nueve procesos independientes tomando decisiones por su cuenta.</p>
+            <p>Lo que sí automatiza de forma útil: leer Figma vía MCP, crear variants con un patrón repetible, generar stories y CSS alineados a tokens, construir Storybook y empujar a GitHub/Vercel cuando lo pido.</p>
+            <p>Lo que no automatiza — y no debería —: decidir si el componente es el correcto para el producto, aceptar un contraste dudoso porque el build pasó, o publicar en ningún sitio sin que yo lo revise.</p>
+        </section>
+        <hr>
+        <section class="detail-section results">
+            <h2>Resultados</h2>
+            <ul class="process-list">
+                <li>Un Design System vivo: Foundations + componentes en Figma, documentados en Storybook y desplegados en Vercel.</li>
+                <li>Un pipeline repetible. Un componente nuevo es tres frases y dos validaciones, no un mega-prompt.</li>
+                <li>Documentación consultable por el equipo (Storybook) y un asistente anclado al corpus, no a la memoria del chat.</li>
+                <li>Participación honesta de IA y humano: la tabla no es «la IA lo hizo todo»; es quién decide en cada puerta.</li>
+                <li>El proceso es el entregable reutilizable. Las rules y skills se pueden copiar a otro DS cambiando URLs de Figma y tokens.</li>
+            </ul>
+        </section>
+         <hr>
+        <section class="detail-section">
+            <h2>Aprendizajes clave</h2>
+            <ul class="process-list">
+                <li>Escribir el proceso. Confiar en la memoria del chat no escala. Las rules y skills sobreviven a la conversación.</li>
+                <li>Las puertas humanas parecen lentas. Evitan rehacer Figma, código y deploy a la vez.</li>
+                <li>Nombrar el stack real. Si el repo es HTML + Storybook, se dice. No se vende un paquete React si aún no está.</li>
+                <li>La IA se equivoca en detalles de diseño: tipografías, tokens mal enlazados, naming. El valor está en el bucle corto: captura → corrección → seguir.</li>
+                <li>El Design System reutilizable es el proceso, no solo los botones.</li>
+            </ul>
+        </section>
+         <hr>
+        <section class="detail-section">
+            <h2>Conclusión</h2>
+            <p>Montar un Design System con IA no es sustituir al diseñador ni al desarrollador. Es externalizar la disciplina: el checklist que siempre olvidas, el «no mezcles fases», el «variables sólo en Foundations», el «no hagas push hasta que diga Push».</p>
+            <p>El sistema no es inteligente. Es insistente. Y, para un DS, insistir es casi todo.</p>
+            <p>Si quieres implementar un proceso de creación y documentación basado en IA como este en tu Design System, <a href="https://linkedin.com/in/luispascualcid" target="_blank" rel="noopener noreferrer">escríbeme</a>.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section gallery">
+            <h2>Galería de diseño</h2>
+            <br>
+            <div class="gallery-grid">
+
+                <img src="img/duadupla/figma.jpg" alt="Specs del componente Progress en Figma: tamaños, valores, tonos y tokens">
+                <p class="phase-tools">Figma — specs de Progress (Size × Value × Tone)</p>
+                <br>
+
+                <img src="img/duadupla/figma-progress.jpg" alt="Section de Progress en el archivo Components de Figma">
+                <p class="phase-tools">Figma — section Progress en Components</p>
+                <br>
+
+                <img src="img/duadupla/storybook.jpg" alt="Documentación de Progress en Storybook">
+                <p class="phase-tools">Storybook — Docs de Progress</p>
+                <br>
+
+                <img src="img/duadupla/storybook-progress.jpg" alt="Página de documentación de Progress en Storybook">
+                <p class="phase-tools">Storybook — página de Progress en producción</p>
+                <br>
+
+                <img src="img/duadupla/foundations.jpg" alt="Foundations del Design System">
+                <p class="phase-tools">Foundations — las variables solo viven aquí</p>
+                <br>
+
+                <img src="img/duadupla/figma-foundations.jpg" alt="Archivo Foundations en Figma">
+                <p class="phase-tools">Figma — archivo Foundations</p>
+                <br>
+
+                <img src="img/duadupla/storybook-foundations.jpg" alt="Foundations documentadas en Storybook">
+                <p class="phase-tools">Storybook — Foundations</p>
+                <br>
+
+                <img src="img/duadupla/estructura.jpg" alt="Estructura del repositorio: rules, skills, stories y specs">
+                <p class="phase-tools">Repo — rules, skills y stories. El proceso vive aquí.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p class="copyright">
+                <span>© 2026 Luis Pascual</span>
+                <span>Madrid (España)</span>
+            </p>
+        </footer>
+    </main>
+    <script src="../js/dot-grid.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/cursor.js"></script>
+</body>
+</html>
