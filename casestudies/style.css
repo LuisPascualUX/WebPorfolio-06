@@ -304,6 +304,56 @@ img {
     border-radius: 4px;
 }
 
+.img-caption {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.detail-section pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    background-color: var(--phase-bg);
+    color: var(--heading);
+    padding: 16px 20px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 16px 0 24px;
+    white-space: pre;
+}
+
+.detail-section img.shot,
+.detail-hero img.shot {
+    border: 1px solid var(--border);
+}
+
+.detail-section code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.875em;
+}
+
+.detail-section ol {
+    margin: 12px 0 16px;
+    padding-left: 1.25em;
+}
+
+.detail-section ol li {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--heading);
+    margin-bottom: 16px;
+}
+
 /* ========================================
    Back link
    ======================================== */
@@ -356,6 +406,7 @@ img {
     color: var(--text-muted);
     font-size: 0.8rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .phase p .phase-tools,
