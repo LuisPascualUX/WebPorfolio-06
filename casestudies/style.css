@@ -387,7 +387,7 @@ img {
     background-color: var(--phase-bg);
     padding: 24px;
     border-radius: 6px;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
     font-size: small;
     line-height: normal;
 }
