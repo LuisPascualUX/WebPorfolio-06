@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W9S8MQT3W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8W9S8MQT3W');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Tokens — Case study by Luis Pascual, Sr Product Designer. A Claude Code skill that generates W3C design tokens with OKLCH, WCAG, and APCA.">
+    <title>Design Tokens — Luis Pascual</title>
+    <link rel="alternate" hreflang="es" href="/ds-tokens/design-tokens.html">
+    <link rel="alternate" hreflang="en" href="/en/ds-tokens/design-tokens.html">
+    <link rel="alternate" hreflang="x-default" href="/ds-tokens/design-tokens.html">
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="stylesheet" href="../../css/tokens.css">
+    <link rel="stylesheet" href="../../ds-tokens/style.css">
+    <!-- Anti-FOUC: apply theme before paint -->
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="site-controls">
+        <a class="lang-toggle" href="../../ds-tokens/design-tokens.html" lang="es" hreflang="es" aria-label="Switch to Spanish">ESP</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.5"/>
+                <line x1="12" y1="2"     x2="12" y2="4"/>
+                <line x1="12" y1="20"    x2="12" y2="22"/>
+                <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="2"  y1="12"    x2="4"  y2="12"/>
+                <line x1="20" y1="12"    x2="22" y2="12"/>
+                <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+            </svg>
+        </button>
+    </div>
+
+    <canvas id="dot-grid" aria-hidden="true"></canvas>
+    <main id="main-content">
+        <a href="../index.html" class="back-link">← Back</a>
+
+        <section class="detail-hero">
+            <h1>Design-tokens</h1>
+            <img src="../../ds-tokens/hola.png" alt="Welcome message from the Design-tokens skill" class="detail-hero-image">
+        </section>
+
+        <section class="detail-section">
+            <h2>The problem</h2>
+            <p> Creating coherent design tokens is slow and error-prone. Going from a brand color to valid JSON with perceptually uniform scales, WCAG/APCA accessibility values, and HSL/OKLCH formats can take hours. And doing it right — following the W3C Design Tokens Community Group specification — is specialist territory.</p>
+            </section>
+        <hr>
+        <section class="detail-section">
+            <h2>The solution</h2>
+            <p>A Claude Code skill that acts as an interactive W3C token generator. With three inputs (brand color, base gray, and typography) it generates a complete system: color palettes with a canonical OKLCH scale, modular typography, spacing, elevations, grid, motion, accessible focus, and the new Liquid Glass material from iOS 26.</p>
+
+            <p>Two modes:</p>
+            <ul class="process-list">
+                <li>Quick (3 inputs → complete file).</li>
+                <li>Guided (12 steps for full control).</li>
+            </ul>
+
+        </section>
+        <hr>
+        <section class="detail-section">
+            <h2>The creation process</h2>
+            <p>The skill is defined in a single Markdown file at .claude/commands/design-tokens.md. The main challenge was specifying the behavior: how to calculate perceptually uniform color ramps, how to structure the JSON per the W3C spec, what to ask and in what order, and how to generate the HTML showcase with no external dependencies.</p>
+            <p>Several iterations to refine: the canonical OKLCH scale, the cross-token reference system ({spacing.gap.4}), the structure of composite typography tokens, and accessibility extensions for each literal color.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section">
+            <h2>The execution process</h2>
+            <p>When "/design-tokens" is invoked, Claude follows the skill flow:</p>
+
+            <ol class="process-list-number">
+                <li>Asks for the mode (quick or guided).</li>
+                <li>Collects the required inputs.</li>
+                <li>Runs a Python script internally for color calculations (OKLCH → sRGB, WCAG, APCA) with mathematical precision.</li>
+                <li>Writes "{name}.tokens.json" and "{name}.showcase.html".</li>
+                <li>Opens the showcase in the browser with "open".</li>
+            </ol>
+            <p>The showcase is self-contained HTML that reads the JSON via "fetch" and renders the tokens live.</p>
+        </section>
+
+        <hr>
+
+        <section class="detail-section results">
+            <h2>Results</h2>
+            <ul class="process-list">
+                <li><strong>339 tokens</strong> generated from 4 inputs in quick mode.</li>
+                <li>Color palettes with a canonical OKLCH scale guaranteeing consistent contrast across hues.</li>
+                <li>WCAG AA/AAA badges and APCA values for each color.</li>
+                <li>Navigable showcase with 11 sections: colors, typography, spacing, elevations, grid, motion, Liquid Glass…</li>
+                <li>JSON file ready to import into Figma, Style Dictionary, or Theo.</li>
+            </ul>
+        </section>
+         <hr>
+        <section class="detail-section">
+            <h2>Learning and Conclusion</h2>
+            <p>Claude Code skills are surprisingly powerful when the instruction is well specified. The Markdown file is the product: it defines the behavior, the calculations, the output format, and the tone of the conversation.</p>
+            <p>The biggest takeaway: <strong>precision in the skill prompt matters more than in any conversational prompt</strong> . Every ambiguity becomes a poorly generated token or an unnecessary question to the user. Investing time in the specification saves time on every subsequent run.</p>
+        </section>
+         <hr>
+                 
+         <section class="detail-section">
+            <h2>Showcase</h2>
+            <p>For a quick-mode input of:</p>
+            <ul class="process-list">
+                <li>Name:<strong> Luis DS</strong></li>
+                <li>Primary color:<strong> #870E46</strong></li>
+                <li>Accent color:<strong> #41F6AB</strong></li>
+                <li>Neutral color:<strong> #869095</strong></li>
+                <li>Typography:<strong>Afacad (Google Fonts)</strong></li>
+            </ul>
+          <br>
+            <p>The following result was obtained:</p>
+               <ul class="process-list">
+                <li>Color:<strong> 100 </strong>tokens</li>
+                <li>Typography:<strong> 38 </strong>tokens</li>
+                <li>Spacing:<strong> 70 </strong>tokens</li>
+                <li>Aspect ratio:<strong> 6 </strong>tokens</li>
+                <li>Elevations (shadows):<strong> 7 </strong>tokens</li>
+                <li>Borders (width & radius):<strong> 12 </strong>tokens</li>
+                <li>Grid and breakpoints:<strong> 30 </strong>tokens</li>
+                <li>Focus:<strong> 6 </strong>tokens</li>
+                <li>Motion:<strong> 16 </strong>tokens</li>
+                <li>Shader:<strong> 54 </strong>tokens</li>
+                <li><strong>TOTAL: 339 tokens </strong></li>
+            </ul>
+           <br>
+            <p>Assumptions:</p>
+            <ul class="process-list">
+                <li>Secondary #008AA7 derived automatically (primary hue +210° → teal)</li>
+                <li>Accent #41F6AB used as-is (user-provided)</li>
+                <li>Spacing base: 4px, Tailwind-style scale (35 steps)</li>
+                <li>Border radius base: 8px (sm=4px, lg=12px, xl=16px…)</li>
+                <li>Shadow base: #101828</li>
+                <li>Motion: subtle style (slightly longer durations)</li>
+                <li>Semantic colors: defaults (most used)</li>
+                <li>Focus: WCAG 2.2 §2.4.11 (ring 2px, offset 2px)</li>
+                <li>Liquid Glass: 3 variants (default/thick/ultra-thin), iOS 26</li>
+            </ul>
+              <br>
+            <p><a href="../../luisds/luis-ds.showcase.html" target="_blank" rel="noopener noreferrer">View the showcase ↗</a></p>
+
+
+
+
+
+
+        </section>
+
+         <hr>
+
+        <footer>
+            <p class="copyright">
+                <span>© 2026 Luis Pascual</span>
+                <span>Madrid (Spain)</span>
+            </p>
+        </footer>
+    </main>
+    <script src="../../js/dot-grid.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/cursor.js"></script>
+</body>
+</html>

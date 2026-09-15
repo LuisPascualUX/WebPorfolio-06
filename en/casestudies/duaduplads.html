@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W9S8MQT3W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8W9S8MQT3W');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dua Dupla DS — Case study by Luis Pascual. How I built a Design System with skills, rules, and agents in Cursor—without giving up human judgment.">
+    <title>Dua Dupla DS — Luis Pascual</title>
+    <link rel="alternate" hreflang="es" href="/casestudies/duaduplads.html">
+    <link rel="alternate" hreflang="en" href="/en/casestudies/duaduplads.html">
+    <link rel="alternate" hreflang="x-default" href="/casestudies/duaduplads.html">
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="stylesheet" href="../../css/tokens.css">
+    <link rel="stylesheet" href="../../casestudies/style.css">
+    <!-- Anti-FOUC: apply theme before render -->
+    <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="site-controls">
+        <a class="lang-toggle" href="../../casestudies/duaduplads.html" lang="es" hreflang="es" aria-label="Switch to Spanish">ESP</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.5"/>
+                <line x1="12" y1="2"     x2="12" y2="4"/>
+                <line x1="12" y1="20"    x2="12" y2="22"/>
+                <line x1="4.22" y1="4.22"   x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="2"  y1="12"    x2="4"  y2="12"/>
+                <line x1="20" y1="12"    x2="22" y2="12"/>
+                <line x1="4.22" y1="19.78"  x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+            </svg>
+        </button>
+    </div>
+
+    <canvas id="dot-grid" aria-hidden="true"></canvas>
+    <main id="main-content">
+        <a href="../index.html" class="back-link">← Back</a>
+
+        <section class="detail-hero">
+            <h1>Dua Dupla DS</h1>
+            <p class="lead">Figma + Storybook + a three-phrase pipeline. What actually works, what isn’t magic, and why the human remains the handbrake.</p>
+            <img class="shot" src="../../casestudies/img/duadupla/medium-cover.jpg" alt="Dua Dupla pipeline: human, Cursor, Figma, Storybook, CodePen, and publish">
+
+            <div class="phase" role="region" aria-label="Project overview">
+                <p><span class="phase-tools">Date:</span> Nov 2025 – Aug 2026.</p>
+                <p><span class="phase-tools">Description:</span> A Design System with an AI-powered creation and documentation process—without giving up human judgment.</p>
+                <p><span class="phase-tools">Role:</span> Product Designer &amp; DesignOps. I designed the system, wrote the rules and skills, designed Foundations and components in Figma, and built the documentation in Storybook through to production.</p>
+                <p><span class="phase-tools">Platform:</span> Figma · Storybook (web) · Gemini Notebook assistant.</p>
+                <p><span class="phase-tools">Methodology:</span> DesignOps. Discipline externalized: three phrases, two human gates, and a corpus for the assistant.</p>
+                <p><span class="phase-tools">Tools:</span> Figma MCP, Cursor, Storybook, CodePen, GitHub, Vercel, Gemini Notebook.</p>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <p>Spoiler alert: I did not build an “autonomous agent that designs on its own.”</p>
+            <p>What did I build? My AI puts it this way: “An operating system for designing and documenting through an AI agent—made of written rules, skills with checklists, commands, and a three-step pipeline that forces me to validate as a human before moving on.”</p>
+            <p>The Dua Dupla Design System—documented in Figma and Storybook, deployed on Vercel—is the result of that work, done side by side with Cursor.</p>
+            <p>If you’re expecting a “press a button and get the full DS” system, this isn’t that. If you care about how to constrain a model so it doesn’t invent tokens, doesn’t jump to code without Figma, and doesn’t push until you say “Push,” keep reading.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>The real problem</h2>
+            <p>A Design System isn’t just nice-looking components. It’s:</p>
+            <ul class="process-list">
+                <li>Variables in one place (the Foundations file).</li>
+                <li>Components with variants.</li>
+                <li>Documentation with anatomy, states, and accessibility.</li>
+                <li>And a path to production.</li>
+            </ul>
+            <p>When you work with a coding assistant, the risk isn’t that it doesn’t know CSS. The risk is that it mixes phases: draws in Figma, implements in Storybook, and pushes to GitHub in the same breath… without you having looked at anything, or having a chance to validate it.</p>
+            <p>That happened enough times that I turned it into a rule.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>What’s actually in the repo</h2>
+            <p>There aren’t “9 agents running in parallel” in this project. There is:</p>
+            <p><strong>1. AGENTS.md</strong> — a map of roles (orchestrator, figma draw, Storybook docs, release…). It’s the contract for who does what.</p>
+            <p><strong>2. Rules</strong> (<code>.cursor/rules/*.mdc</code>) — policies that are always or almost always active. Real examples:</p>
+            <ul class="process-list">
+                <li><code>component-pipeline-3-steps.mdc</code> — don’t mix Figma / Storybook / Push.</li>
+                <li><code>variables-only-foundations.mdc</code> — variables live in the Foundations file; they aren’t created in the Components file.</li>
+                <li><code>push-github-vercel.mdc</code> — “Push” means commit + GitHub + verify Vercel Ready.</li>
+            </ul>
+            <p><strong>3. Skills</strong> (<code>.cursor/skills/*/SKILL.md</code>) — step-by-step procedures. The two I use most for components:</p>
+            <ul class="process-list">
+                <li><code>figma-draw-ds-component</code>, to draw the set + Specs/Anatomy in Figma.</li>
+                <li><code>add-new-ds-component</code>, to document in Storybook (HTML + TypeScript, not a published React package).</li>
+            </ul>
+            <p><strong>4. Commands:</strong> <code>/draw-figma-component</code> and <code>/add-new-component</code> to trigger the right role.</p>
+            <p>The structure looks roughly like this:</p>
+            <pre>.cursor/
+  commands/     # slash commands
+  rules/        # DS policies
+  skills/       # procedures + checklists
+apps/docs/src/
+  stories/      # *.stories.ts + design-system.css
+  stories/lib/  # render helpers + CSS per component
+docs/           # specs, token mapping, visual targets
+AGENTS.md</pre>
+            <img class="shot" src="../../casestudies/img/duadupla/medium-repo.png" alt="Repository structure: .cursor/rules, skills, commands, apps/docs/src/stories, and docs">
+            <p class="img-caption">The process lives in the repo: rules, skills, stories.</p>
+            <p><strong>Important honesty</strong>: the plan and AGENTS.md describe a Figma → React → Storybook (Astro) → Vercel path. In this repository, what’s in production today is Storybook with HTML/TS helpers under <code>apps/docs</code>. I’m not pretending there’s already a React npm package ready for product. Storybook is live (still Work in Progress): <a href="https://dua-dupla-storybook.vercel.app" target="_blank" rel="noopener noreferrer">dua-dupla-storybook.vercel.app</a>.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>The trick that has given me the most value: three phrases</h2>
+            <img class="shot" src="../../casestudies/img/duadupla/medium-tres-frases.png" alt="From Figma to Storybook to production in three steps">
+            <p class="img-caption">From Figma to Storybook to Production.</p>
+            <p>Instead of a mega-prompt, the flow for a new component is literally this:</p>
+
+            <div class="step-card">
+                <h3>Step 1 — “Let’s do component X”</h3>
+                <p>I write: “Let’s do Component X.” The assistant creates the component and specs in Figma. It doesn’t do Storybook, commit, or push.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 2 — “Document in Storybook”</h3>
+                <p>I write: “Document in Storybook.” The assistant creates the render helper, CSS with tokens, Docs/Playground stories, and <code>build-storybook</code>. It doesn’t push. I review the code the assistant generates for each component. I drop it into a tool like CodePen, render it there, and compare it with Figma: same tokens, sizes, states, and variants. If the result doesn’t match, I fix it before moving on. Still no push here.</p>
+            </div>
+            <div class="step-card">
+                <h3>Step 3 — “Push”</h3>
+                <p>I write: “Push.” Cursor does commit → git push → waits for Vercel Ready and a smoke check. Commit to GitHub, redeploy on Vercel, and publish Storybook so the team can use it.</p>
+            </div>
+
+            <p>Between steps 1 and 2 I review the component in Figma, check that variables are applied correctly, and can fix a color, a typeface, a spacing value, or a variant.</p>
+            <p>Between 2 and 3 I review the Storybook docs (locally, on a localhost URL) and also pull the component code into CodePen—or a similar sandbox—to validate that the visual result matches Figma. I only move on when that parity convinces me. The model doesn’t “finish the job” until I validate everything and type the “Push” command. That’s when it goes to GitHub and redeploys on Vercel.</p>
+            <p>Example: designing the Progress component. In Figma it ended up as Size Sm/Md × Value 0–100 × Tone Primary/Success. I changed the Primary indicator to <code>fg/interactiveSecondary/default</code>. Then I asked it to document in Figma and Storybook. And after validating in Storybook and CodePen against Figma, I said “Push.” Commit <code>3e817ff</code>, deploy Ready, stories <code>components-progress — docs</code> and <code>— playground</code> in production. No skipped steps.</p>
+            <img class="shot" src="../../casestudies/img/duadupla/medium-figma-progress.png" alt="Progress component specs in Figma: sizes, values, tones, and tokens">
+            <p class="img-caption">Progress component designed and documented in Figma.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>After Push: the DS assistant</h2>
+            <p>The process no longer ends with Push. Once Storybook is in production, Cursor generates a <code>.md</code> file with the documentation for the component we just created. I upload it by hand to Gemini Notebook. There’s no official API; we don’t pretend there’s magic there.</p>
+            <p>That notebook is the virtual assistant for the design system. The team asks questions there instead of flooding Slack: “When do I use an Alert?”, “What’s the hex for Error?”, “Can I put two primary buttons next to each other?”. Answers are anchored to the corpus—the uploaded component documentation—and don’t invent. They close with a link to Storybook + Figma.</p>
+            <p>It isn’t a chatbot that improvises. It’s the system corpus, queryable.</p>
+            <p class="project-links">
+                <a href="https://dua-dupla-storybook.vercel.app" target="_blank" rel="noopener noreferrer">Storybook ↗</a>
+                <a href="https://dua-dupla-storybook.vercel.app/asistente/" target="_blank" rel="noopener noreferrer">Assistant ↗</a>
+            </p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>What each component costs</h2>
+            <p>When the flow closes, Cursor gives me an estimate of what the full design and documentation process for that component cost: tokens consumed, dollars, and euros.</p>
+            <p>It isn’t a billing dashboard. It’s a line of honesty at the end of each cycle: how much it cost, in numbers, to externalize the discipline for that component—Figma, Storybook, validations, push, and markdown export—without selling the idea that “AI does it for free.”</p>
+            <img class="shot" src="../../casestudies/img/duadupla/costeComponente.jpg" alt="Alert component cost">
+            <p class="img-caption">Alert component cost, Cursor spend.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>Foundations first</h2>
+            <p>Another non-negotiable rule: variables only in the Foundations file. In the Components file, variables are consumed; they aren’t created. When the agent draws in Figma, it has to bind existing variables (<code>bg/basic/tertiary</code>, <code>fg/feedback/success</code>, <code>radius-full</code>…). If a token is missing, the decision happens in Foundations—you don’t “hardcode” a loose value in the component and forget about it.</p>
+            <p>That also shows up in code: CSS with <code>--ds-*</code> mapped from the token dictionary, not magic per component.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>What we document in Storybook</h2>
+            <p>Each component isn’t “a loose story.” The skill requires, at minimum:</p>
+            <ul class="process-list">
+                <li>Docs (States, Anatomy, Do/Don’t, Props, A11y).</li>
+                <li>Playground with controls.</li>
+                <li>White canvas in States/Anatomy (unless a documented exception).</li>
+                <li>And <code>npm run build-storybook</code> passing green before calling the step done.</li>
+            </ul>
+            <p>At the start I created Foundations in Figma plus the Button, Button Icon, Checkbox, Radio, and Switch components. Then Cursor created the rest; we started with the simpler ones: Divider, Badge, Tag, Avatar, Spinner, and Progress. In the coming days we’ll move on to more complex components.</p>
+            <p>Not everything was born perfect. Avatar needed typography tweaks. Progress changed tokens mid-way. Badge and Tag went through variant refinements and documentation navigation updates. That’s Design System work, with or without AI.</p>
+            <img class="shot" src="../../casestudies/img/duadupla/medium-storybook-progress.png" alt="Progress component documentation in Storybook: variants, anatomy, and measurements">
+            <p class="img-caption">Progress component documented in Storybook.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>What an agent is (and isn’t)</h2>
+            <p>When I say agents, I mean documented roles the assistant takes on when it reads a skill or a command—not nine independent processes making decisions on their own.</p>
+            <p>What it usefully automates:</p>
+            <ul class="process-list">
+                <li>Reading Figma context via MCP.</li>
+                <li>Creating variants and documentation with a repeatable pattern.</li>
+                <li>Generating stories and CSS aligned to tokens.</li>
+                <li>Building Storybook and pushing to GitHub/Vercel when I ask.</li>
+                <li>Exporting the component markdown for the assistant corpus, and the cycle cost report.</li>
+            </ul>
+            <p>What it doesn’t automate (and shouldn’t):</p>
+            <ul class="process-list">
+                <li>Deciding whether the component is the right one for the product.</li>
+                <li>Accepting dubious contrast because “the build passed.”</li>
+                <li>Publishing anywhere without my review.</li>
+                <li>Uploading the corpus to Gemini Notebook. I do that by hand.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>Honest lessons</h2>
+            <ol>
+                <li>Write the process down. Trusting chat memory doesn’t scale. Rules and skills outlive the conversation.</li>
+                <li>Human gates, not fake speed. The gates feel slow; they prevent redoing several layers at once.</li>
+                <li>Name the real stack. If the repo is HTML + Storybook, say so. Don’t sell React if it isn’t there yet.</li>
+                <li>AI gets design details wrong. Typography, mislinked tokens, token spelling. The value is in the short loop: catch → fix → continue.</li>
+                <li>The reusable DS is the process, not just the buttons. This <code>.cursor/</code> + <code>AGENTS.md</code> layout is meant to be copied into another project by swapping Figma URLs and tokens.</li>
+            </ol>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>Closing</h2>
+            <p>Building a Design System with AI isn’t about replacing the designer or the developer. It’s about externalizing discipline: the checklist you always forget, the “don’t mix phases,” the “variables only in Foundations,” the “don’t push until I say Push.”</p>
+            <p>The system isn’t smart. It’s insistent. And for a DS, insistence is almost everything.</p>
+            <p>If you want to implement an AI-based creation and documentation process like this in your Design System, <a href="https://linkedin.com/in/luispascualcid" target="_blank" rel="noopener noreferrer">write to me</a>.</p>
+        </section>
+        <hr>
+
+        <section class="detail-section">
+            <h2>The video</h2>
+            <p>Full flow creating the Alert component: from the phrase in Cursor to the set in Figma, documentation in Storybook, CodePen, the push to production, and closing the cycle.</p>
+            <video class="case-video" controls preload="metadata" playsinline poster="../../casestudies/img/duadupla/medium-cover.jpg">
+                <source src="../../casestudies/img/duadupla/proceso-alert.mp4" type="video/mp4">
+                <track kind="captions" src="../../casestudies/img/duadupla/proceso-alert.vtt" srclang="es" label="Spanish" default>
+            </video>
+            <p class="img-caption">Creating the Alert component · ~4 min</p>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p class="copyright">
+                <span>© 2026 Luis Pascual</span>
+                <span>Madrid (Spain)</span>
+            </p>
+        </footer>
+    </main>
+    <script src="../../js/dot-grid.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/cursor.js"></script>
+</body>
+</html>
