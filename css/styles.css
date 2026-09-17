@@ -389,6 +389,7 @@ hr {
    ======================================== */
 .now p {
     color: var(--text-secondary);
+    font-size: 15px;
     margin-bottom: 12px;
 }
 
